@@ -57,7 +57,7 @@ export default async function Home() {
       <header className="sticky top-0 bg-background/95 backdrop-blur-sm z-10 border-b">
           <div className="container mx-auto px-4 py-6">
               <h1 className="text-3xl font-bold">
-                  Top Charts
+                  AppsGU
               </h1>
               <h2 className="text-lg text-muted-foreground mt-1">Discover the Best Apps</h2>
               <p className="text-sm text-muted-foreground mt-2 max-w-2xl">
