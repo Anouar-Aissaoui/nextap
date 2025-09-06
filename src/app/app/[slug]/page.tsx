@@ -20,25 +20,29 @@ export async function generateMetadata({ params }: AppDetailPageProps): Promise<
   const app = apps.find(app => app.slug === params.slug);
 
   if (!app) {
-    return {
-      title: 'App Not Found'
-    }
+    notFound();
   }
 
-  const siteUrl = 'https://www.appsg.site/';
-  const canonicalUrl = `${siteUrl}app/${app.slug}`;
+  const siteUrl = 'https://www.appsg.site';
+  const canonicalUrl = `${siteUrl}/app/${app.slug}`;
   const ogImageUrl = `https://picsum.photos/seed/${app.slug}/1200/630`;
+  const title = `${app.name} - ${app.description}`;
+  const siteName = "AppsGU";
 
   return {
-    title: `${app.name} - Download Now`,
-    description: app.description,
+    title: {
+      template: `%s | ${siteName}`,
+      default: title,
+    },
+    description: app.longDescription.substring(0, 160),
     alternates: {
       canonical: canonicalUrl,
     },
     openGraph: {
-      title: `${app.name} - AppsGU`,
+      title: title,
       description: app.description,
       url: canonicalUrl,
+      siteName: siteName,
       images: [
         {
           url: ogImageUrl,
@@ -47,9 +51,14 @@ export async function generateMetadata({ params }: AppDetailPageProps): Promise<
           alt: `${app.name} feature image`,
         },
       ],
-      siteName: 'AppsGU',
       locale: 'en_US',
       type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: title,
+      description: app.description,
+      images: [ogImageUrl],
     },
   };
 }
