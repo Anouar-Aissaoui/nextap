@@ -1,3 +1,6 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import { apps } from '@/lib/apps';
 import type { App } from '@/lib/apps';
 import { notFound } from 'next/navigation';
@@ -7,39 +10,62 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft, Download } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
+// Extend the Window interface to include call_locker
+declare global {
+  interface Window {
+    call_locker?: () => void;
+  }
+}
+
 type AppDetailPageProps = {
   params: {
     slug: string;
   };
 };
 
-async function getApp(slug: string): Promise<App | undefined> {
-    return apps.find(app => app.slug === slug);
-}
+export default function AppDetailPage({ params }: AppDetailPageProps) {
+  const [app, setApp] = useState<App | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
-export async function generateStaticParams() {
-    return apps.map(app => ({
-        slug: app.slug,
-    }));
-}
+  useEffect(() => {
+    const foundApp = apps.find(app => app.slug === params.slug);
+    if (foundApp) {
+      setApp(foundApp);
+    }
+    setIsLoading(false);
+  }, [params.slug]);
 
-export async function generateMetadata({ params }: AppDetailPageProps) {
-  const app = await getApp(params.slug);
-
-  if (!app) {
-    return {
-      title: 'App Not Found',
-    };
-  }
-
-  return {
-    title: `${app.name} | App Discovery Hub`,
-    description: app.description,
+  const handleDownloadClick = () => {
+    if (typeof window.call_locker === 'function') {
+      window.call_locker();
+    }
   };
-}
 
-export default async function AppDetailPage({ params }: AppDetailPageProps) {
-  const app = await getApp(params.slug);
+  if (isLoading) {
+      return (
+        <div className="container mx-auto py-8 md:py-16">
+            <div className="animate-pulse">
+                <div className="h-8 w-32 bg-muted rounded mb-6"></div>
+                <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
+                    <div className="p-6 md:p-8">
+                        <div className="grid md:grid-cols-[150px_1fr] gap-6 md:gap-8 items-start">
+                            <div className="rounded-2xl bg-muted aspect-square w-[150px] h-[150px]"></div>
+                            <div>
+                                <div className="h-10 w-3/4 bg-muted rounded mb-2"></div>
+                                <div className="h-6 w-1/2 bg-muted rounded mb-4"></div>
+                                <div className="h-5 w-full bg-muted rounded mb-2"></div>
+                                <div className="h-5 w-5/6 bg-muted rounded"></div>
+                                <div className="mt-auto pt-6">
+                                  <div className="h-12 w-40 bg-primary/50 rounded-md"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      )
+  }
 
   if (!app) {
     notFound();
@@ -70,13 +96,10 @@ export default async function AppDetailPage({ params }: AppDetailPageProps) {
                             <p className="text-lg text-muted-foreground mb-4">By {app.author}</p>
                             <CardDescription className="text-base max-w-prose">{app.description}</CardDescription>
                             <div className="mt-auto pt-6">
-                                <Button asChild size="lg" className="w-full sm:w-auto" disabled={!app.url}>
-                                    <a href={app.url || '#'} target="_blank" rel="noopener noreferrer">
-                                        <Download className="mr-2 h-5 w-5" />
-                                        Download Now
-                                    </a>
+                                <Button size="lg" className="w-full sm:w-auto" onClick={handleDownloadClick}>
+                                    <Download className="mr-2 h-5 w-5" />
+                                    Download Now
                                 </Button>
-                                {!app.url && <p className="text-sm text-destructive mt-2">Download link not available for this app.</p>}
                             </div>
                         </div>
                     </div>
