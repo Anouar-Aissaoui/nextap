@@ -42,7 +42,11 @@ Valid categories are: Games, Social, Entertainment, Utilities, Productivity, Edu
 
 Output a JSON array where each object contains the app name, description, and the determined category.
 
-Apps: {{{JSON.stringify input}}}`,
+Apps:
+{{#each input}}
+- Name: {{{this.name}}}
+  Description: {{{this.description}}}
+{{/each}}`,
 });
 
 const categorizeAppsFlow = ai.defineFlow(
