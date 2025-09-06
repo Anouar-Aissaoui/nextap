@@ -2,18 +2,28 @@
 import { apps } from '@/lib/apps';
 import type { App } from '@/lib/apps';
 import HomePage from '@/components/home-page';
+import type { Metadata } from 'next';
 
 export const revalidate = 3600; // Revalidate every hour
 
 export type FullAppInfo = App & { category: string };
+
+const siteUrl = 'https://www.appsg.site/';
+
+export const metadata: Metadata = {
+  title: 'AppsGU: Top Modded Apps for iOS & Android (Free Downloads)',
+  description: 'Discover and download the best modded and tweaked apps for iOS and Android. Safe, updated, and free from AppsGU, your #1 source for enhanced mobile apps.',
+  alternates: {
+    canonical: siteUrl,
+  },
+};
+
 
 export default async function Home() {
   const categorizedApps: FullAppInfo[] = apps.map(app => ({
     ...app,
     category: app.category || 'Utilities',
   }));
-
-  const siteUrl = 'https://www.appsg.site/';
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -61,7 +71,7 @@ export default async function Home() {
               <h1 className="text-3xl font-bold">
                   AppsGU
               </h1>
-              <h2 className="text-lg text-muted-foreground mt-1">Discover Your Next Favorite App</h2>
+              <h2 className="text-lg text-muted-foreground mt-1">Your Source for Modded iOS & Android Apps</h2>
               <p className="text-sm text-muted-foreground mt-2 max-w-2xl">
                 Browse our curated list of the best modded apps for iOS & Android.
               </p>
