@@ -22,18 +22,14 @@ declare global {
   }
 }
 
-// Simple markdown to HTML converter
-const Markdown = ({ text }: { text: string }) => {
-  const html = text
-    .split('\n\n').map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('')
-    .replace(/## (.*)/g, '<h2>$1</h2>')
-    .replace(/### (.*)/g, '<h3>$1</h3>')
-    .replace(/\- (.*)/g, '<li>$1</li>')
-    .replace(/<li>/g, '<ul><li>')
-    .replace(/<\/li>\n<ul>/g, '</li><li>')
-    .replace(/<\/li><\/p>/g, '</li></ul></p>');
-
-  return <div className="prose prose-sm dark:prose-invert max-w-none text-muted-foreground space-y-4" dangerouslySetInnerHTML={{ __html: html }} />;
+const SafeMarkdown = ({ text }: { text: string }) => {
+  return (
+    <div className="prose prose-sm dark:prose-invert max-w-none text-muted-foreground space-y-4">
+      {text.split('\n').map((paragraph, index) => (
+        <p key={index}>{paragraph}</p>
+      ))}
+    </div>
+  );
 };
 
 
@@ -92,7 +88,7 @@ export default function AppDetailPageClient({ app }: AppDetailPageClientProps) {
                             <h2 className="text-2xl font-bold flex items-center gap-2"><Info /> About This App</h2>
                         </CardHeader>
                         <CardContent>
-                             <Markdown text={app.longDescription} />
+                             <SafeMarkdown text={app.longDescription} />
                         </CardContent>
                     </Card>
                     

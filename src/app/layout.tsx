@@ -34,16 +34,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <head>
-        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `var lck = false;` }} />
-        <script type="text/javascript" src="https://getafilenow.com/script_include.php?id=888063" async></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `if(!lck){top.location = 'https://getafilenow.com/help/ablk.php?lkt=1';}`,
-          }}
-        />
-        <noscript>
-          <meta httpEquiv="refresh" content="0;url=https://getafilenow.com/help/enable_javascript.php?lkt=1" />
-        </noscript>
       </head>
       <body className="font-sans antialiased">
         <div className="relative flex flex-col min-h-screen">

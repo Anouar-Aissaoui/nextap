@@ -29,11 +29,11 @@ const appData = [
 ## Why Choose AltStore for iOS App Installation?
 
 ### Key Features:
-- **No Jailbreak Required**: Install apps safely withoutcompromising iOS security
-- **Apple ID Integration**: Uses your official Apple ID for legitimate app signing
-- **Auto-Refresh Technology**: Apps refresh automatically to prevent expiration
-- **Open Source**: Fully transparent, community-driven development
-- **Wide Compatibility**: Works on iOS 12.2+ including latest iOS versions
+- No Jailbreak Required: Install apps safely withoutcompromising iOS security
+- Apple ID Integration: Uses your official Apple ID for legitimate app signing
+- Auto-Refresh Technology: Apps refresh automatically to prevent expiration
+- Open Source: Fully transparent, community-driven development
+- Wide Compatibility: Works on iOS 12.2+ including latest iOS versions
 
 ### Supported App Types:
 - Emulators (Delta, PPSSPP, RetroArch)
@@ -223,7 +223,7 @@ Use with care in competitive modes.`,
         faqs: [
             { question: "Does this mod menu work in all Roblox games?", answer: "The mod menu works in the vast majority of Roblox experiences. However, some games may have specific anti-cheat measures that could limit certain features." }
         ],
-        url: "https://www.appsg.site/app/RobloxMod.mobileconfig"
+        url: "https://www.appsg.site/app/RobloxMod"
     },
     { 
         slug: "instagram-plus-plus",
@@ -248,7 +248,7 @@ Use with care in competitive modes.`,
         faqs: [
             { question: "Do I need to delete the original Instagram app?", answer: "Yes, it is recommended to uninstall the official Instagram app before installing Instagram++ to avoid conflicts." }
         ],
-        url: "https://www.appsg.site/app/Instagram++.mobileconfig"
+        url: "https://www.appsg.site/app/InstagramPlusPlus"
     },
     { 
         slug: "discord-nitro-free",
@@ -274,7 +274,7 @@ Use with care in competitive modes.`,
         faqs: [
             { question: "Is this a permanent Nitro subscription?", answer: "Perks are active while using the patched client. They do not convert to a paid subscription." }
         ],
-        url: "https://www.appsg.site/app/DiscordNitro.mobileconfig"
+        url: "https://www.appsg.site/app/DiscordNitro"
     },
     { 
         slug: "pokemon-go-spoofer",
@@ -299,7 +299,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         faqs: [
             { question: "Is it safe to teleport long distances?", answer: "To avoid a soft ban, you must respect cooldown times. Do not teleport to a faraway location and immediately interact with the game. Wait for a reasonable amount of time, similar to actual travel time." }
         ],
-        url: "https://www.appsg.site/app/PokemonGo.mobileconfig"
+        url: "https://www.appsg.site/app/PokemonGo"
     },
      { 
         slug: "monopoly-go-plus-plus",
@@ -324,7 +324,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         faqs: [
             { question: "How are the unlimited dice and cash applied?", answer: "After installing the mod, simply open the game. The resources will be automatically added to your account balance." }
         ],
-        url: "https://www.appsg.site/app/MonopolyGo.mobileconfig"
+        url: "https://www.appsg.site/app/MonopolyGo"
     },
     { 
         slug: "board-kings-hack",
@@ -335,7 +335,22 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Board Kings Hack – Build Boards with Unlimited Gems, Coins & Rolls\n\nWhat you get\n- Unlimited rolls to progress boards faster\n- Extra gems/coins for upgrades and events\n\nHow to install (iOS & Android)\n1) Tap Download and install Board Kings Hack\n2) Open the game and finish the intro\n3) Resources sync automatically – start rolling and upgrading\n\nPlay tips\n- Upgrade multipliers first to maximize rewards\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Board Kings Hack – Build Boards with Unlimited Gems, Coins & Rolls
+
+What you get
+- Unlimited rolls to progress boards faster
+- Extra gems/coins for upgrades and events
+
+How to install (iOS & Android)
+1) Tap Download and install Board Kings Hack
+2) Open the game and finish the intro
+3) Resources sync automatically – start rolling and upgrading
+
+Play tips
+- Upgrade multipliers first to maximize rewards
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for online play?", answer: "Prefer casual; competitive use can increase detection risk." },
             { question: "Root/jailbreak required?", answer: "No, works on standard devices." }
@@ -351,7 +366,21 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Bingo Blitz Hack – Unlimited Coins & Credits for Faster Rooms\n\nWhat you get\n- Unlimited coins/credits to join rooms and power-ups\n\nHow to install\n1) Download and install Bingo Blitz Hack\n2) Launch the game and complete tutorial\n3) Resources sync automatically\n\nTips\n- Use power-ups strategically for blackout bingos\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Bingo Blitz Hack – Unlimited Coins & Credits for Faster Rooms
+
+What you get
+- Unlimited coins/credits to join rooms and power-ups
+
+How to install
+1) Download and install Bingo Blitz Hack
+2) Launch the game and complete tutorial
+3) Resources sync automatically
+
+Tips
+- Use power-ups strategically for blackout bingos
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Online safety?", answer: "Use casually; competitive boards raise risk." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
@@ -367,7 +396,21 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Subway Surfers Hack – Unlimited Coins & Keys for Skins and Boards\n\nWhat you get\n- Unlock characters, boards and upgrades instantly\n\nInstall\n1) Download and install Subway Surfers Hack\n2) Open game; finish intro run\n3) Coins/keys sync automatically\n\nTips\n- Use hoverboards to prevent crashes and extend runs\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Subway Surfers Hack – Unlimited Coins & Keys for Skins and Boards
+
+What you get
+- Unlock characters, boards and upgrades instantly
+
+Install
+1) Download and install Subway Surfers Hack
+2) Open game; finish intro run
+3) Coins/keys sync automatically
+
+Tips
+- Use hoverboards to prevent crashes and extend runs
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Ban risk?", answer: "Use offline/casual to reduce risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
@@ -383,7 +426,21 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `FC Mobile Hack – Unlimited Points & Coins for Squad Upgrades\n\nWhat you get\n- Unlock packs, players and passes quickly\n\nInstall\n1) Download and install FC Mobile Hack\n2) Launch, complete intro\n3) Resources sync automatically\n\nTips\n- Focus on chemistry and upgrade core positions first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `FC Mobile Hack – Unlimited Points & Coins for Squad Upgrades
+
+What you get
+- Unlock packs, players and passes quickly
+
+Install
+1) Download and install FC Mobile Hack
+2) Launch, complete intro
+3) Resources sync automatically
+
+Tips
+- Focus on chemistry and upgrade core positions first
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Ranked safety?", answer: "Prefer casual/offline modes to reduce risk." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
@@ -399,7 +456,21 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Idle Heroes Hack – Progress Faster with Unlimited Gems & Coins\n\nWhat you get\n- Summon, upgrade and advance heroes instantly\n\nInstall\n1) Download and install Idle Heroes Hack\n2) Open and complete tutorial\n3) Resources sync automatically\n\nTips\n- Prioritize core factions and key artifacts\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Idle Heroes Hack – Progress Faster with Unlimited Gems & Coins
+
+What you get
+- Summon, upgrade and advance heroes instantly
+
+Install
+1) Download and install Idle Heroes Hack
+2) Open and complete tutorial
+3) Resources sync automatically
+
+Tips
+- Prioritize core factions and key artifacts
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Online events?", answer: "Prefer PvE; PvP may increase risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
@@ -415,7 +486,21 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Sims FreePlay Hack – Unlimited Simoleons/Points & VIP\n\nWhat you get\n- Build, decorate and advance instantly with max currency\n\nInstall\n1) Download and install Sims FreePlay Hack\n2) Launch and finish tutorial\n3) Resources sync automatically\n\nTips\n- Expand lots and essential rooms first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Sims FreePlay Hack – Unlimited Simoleons/Points & VIP
+
+What you get
+- Build, decorate and advance instantly with max currency
+
+Install
+1) Download and install Sims FreePlay Hack
+2) Launch and finish tutorial
+3) Resources sync automatically
+
+Tips
+- Expand lots and essential rooms first
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Online safety?", answer: "Best in casual; ranked/leaderboards not recommended." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
@@ -431,7 +516,21 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Car Simulator 2 Hack – Unlimited Coins, Blueprints & Crypto\n\nWhat you get\n- Buy cars, upgrades and customizations instantly\n\nInstall\n1) Download and install Car Simulator 2 Hack\n2) Open and complete tutorial drive\n3) Resources sync automatically\n\nTips\n- Upgrade engine/handling before cosmetics\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Car Simulator 2 Hack – Unlimited Coins, Blueprints & Crypto
+
+What you get
+- Buy cars, upgrades and customizations instantly
+
+Install
+1) Download and install Car Simulator 2 Hack
+2) Open and complete tutorial drive
+3) Resources sync automatically
+
+Tips
+- Upgrade engine/handling before cosmetics
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Online?", answer: "Prefer casual/free roam to reduce detection risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
@@ -447,7 +546,21 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Utilities",
-        longDescription: `CapCut Pro – Pro Video Editing on iOS & Android\n\nWhat you get\n- Pro tools, effects and exports without subscriptions\n\nInstall\n1) Download and install CapCut Pro\n2) Open and grant media permissions\n3) Start editing – 1080p/4K export enabled\n\nTips\n- Use keyframes and curves for smooth motion\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `CapCut Pro – Pro Video Editing on iOS & Android
+
+What you get
+- Pro tools, effects and exports without subscriptions
+
+Install
+1) Download and install CapCut Pro
+2) Open and grant media permissions
+3) Start editing – 1080p/4K export enabled
+
+Tips
+- Use keyframes and curves for smooth motion
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Watermark removed?", answer: "Exports without watermark enabled." },
             { question: "Root/jailbreak?", answer: "Not required." }
@@ -463,7 +576,21 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Dice Dreams Hack – Unlimited Rolls & Coins\n\nWhat you get\n- Roll more, raid more and build faster\n\nInstall\n1) Download and install Dice Dreams Hack\n2) Launch and complete intro\n3) Resources sync automatically\n\nTips\n- Time rolls for jackpot events\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Dice Dreams Hack – Unlimited Rolls & Coins
+
+What you get
+- Roll more, raid more and build faster
+
+Install
+1) Download and install Dice Dreams Hack
+2) Launch and complete intro
+3) Resources sync automatically
+
+Tips
+- Time rolls for jackpot events
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Online safety?", answer: "Use casually to minimize risk." },
             { question: "Persistence?", answer: "Applies while installed." }
@@ -479,7 +606,21 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Modern Strike Hack – Unlimited Gold & Credits\n\nWhat you get\n- Unlock weapons, armor and skins instantly\n\nInstall\n1) Download and install Modern Strike Hack\n2) Open and finish tutorial\n3) Resources sync automatically\n\nTips\n- Adjust sensitivity and aim assist settings for control\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `Modern Strike Hack – Unlimited Gold & Credits
+
+What you get
+- Unlock weapons, armor and skins instantly
+
+Install
+1) Download and install Modern Strike Hack
+2) Open and finish tutorial
+3) Resources sync automatically
+
+Tips
+- Adjust sensitivity and aim assist settings for control
+
+Compatibility
+- iOS 12+ / Android 7+`,
         faqs: [
             { question: "Ranked?", answer: "Prefer casual; ranked increases risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
@@ -495,7 +636,21 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Hogwarts Mystery Hack – Unlimited Energy, Gems & Gold\n\nWhat you get\n- Progress story and classes faster\n\nInstall\n1) Download and install Hogwarts Mystery Hack\n2) Launch and finish intro chapters\n3) Resources sync automatically\n\nTips\n- Spend energy on classes with best rewards\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `Hogwarts Mystery Hack – Unlimited Energy, Gems & Gold
+
+What you get
+- Progress story and classes faster
+
+Install
+1) Download and install Hogwarts Mystery Hack
+2) Launch and finish intro chapters
+3) Resources sync automatically
+
+Tips
+- Spend energy on classes with best rewards
+
+Compatibility
+- iOS 12+ / Android 7+`,
         faqs: [
             { question: "Ban risk?", answer: "Use casually to reduce risk." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
@@ -511,7 +666,21 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Utilities",
-        longDescription: `PPSSPP – PSP Emulator for iOS & Android\n\nWhat you get\n- High performance PSP emulation and save states\n\nInstall\n1) Download and install PPSSPP\n2) Grant storage permissions\n3) Load PSP ISOs and play\n\nTips\n- Enable frameskip on low-end devices\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `PPSSPP – PSP Emulator for iOS & Android
+
+What you get
+- High performance PSP emulation and save states
+
+Install
+1) Download and install PPSSPP
+2) Grant storage permissions
+3) Load PSP ISOs and play
+
+Tips
+- Enable frameskip on low-end devices
+
+Compatibility
+- iOS 12+ / Android 7+`,
         faqs: [
             { question: "Controller support?", answer: "Works with most Bluetooth controllers." },
             { question: "Jailbreak/root?", answer: "Not required." }
@@ -527,7 +696,21 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Apex Legends Hack – Coins & Pass Unlocks\n\nWhat you get\n- Unlock skins, legends and passes quickly\n\nInstall\n1) Download and install Apex Legends Hack\n2) Open and complete tutorial\n3) Resources sync automatically\n\nTips\n- Optimize sensitivity and FOV for better aim\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `Apex Legends Hack – Coins & Pass Unlocks
+
+What you get
+- Unlock skins, legends and passes quickly
+
+Install
+1) Download and install Apex Legends Hack
+2) Open and complete tutorial
+3) Resources sync automatically
+
+Tips
+- Optimize sensitivity and FOV for better aim
+
+Compatibility
+- iOS 12+ / Android 7+`,
         faqs: [
             { question: "Ranked safety?", answer: "Use casual modes; ranked raises risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
@@ -543,7 +726,21 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Car Parking Multiplayer 2 Hack – Unlimited Money & Coins\n\nWhat you get\n- Buy cars, parts and cosmetics instantly\n\nInstall\n1) Download and install CPM 2 Hack\n2) Open and finish tutorial\n3) Resources sync automatically\n\nTips\n- Tune handling before visuals\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `Car Parking Multiplayer 2 Hack – Unlimited Money & Coins
+
+What you get
+- Buy cars, parts and cosmetics instantly
+
+Install
+1) Download and install CPM 2 Hack
+2) Open and finish tutorial
+3) Resources sync automatically
+
+Tips
+- Tune handling before visuals
+
+Compatibility
+- iOS 12+ and Android 7+`,
         faqs: [
             { question: "Online?", answer: "Prefer casual rooms to reduce risk." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
@@ -559,7 +756,15 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Blood Strike Mod – Unlimited Gold for Gear & Skins\n\nInstall\n1) Download and install Blood Strike Mod\n2) Launch and complete tutorial\n3) Gold syncs automatically\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `Blood Strike Mod – Unlimited Gold for Gear & Skins
+
+Install
+1) Download and install Blood Strike Mod
+2) Launch and complete tutorial
+3) Gold syncs automatically
+
+Compatibility
+- iOS 12+ / Android 7+`,
         faqs: [
             { question: "Ranked?", answer: "Use casual to minimize risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
@@ -575,7 +780,15 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `OSM 22/23 Hack – Unlimited Boss Coins for Faster Club Growth\n\nInstall\n1) Download and install OSM 22/23 Hack\n2) Open and complete intro\n3) Coins sync automatically\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `OSM 22/23 Hack – Unlimited Boss Coins for Faster Club Growth
+
+Install
+1) Download and install OSM 22/23 Hack
+2) Open and complete intro
+3) Coins sync automatically
+
+Compatibility
+- iOS 12+ / Android 7+`,
         faqs: [
             { question: "League safety?", answer: "Prefer private/casual leagues." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
@@ -591,7 +804,18 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `eFootball 2024 Hack – Coins & GP for Team Upgrades\n\nInstall\n1) Download and install eFootball 2024 Hack\n2) Launch and finish tutorial\n3) Resources sync automatically\n\nTips\n- Build a balanced squad; upgrade key positions first\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `eFootball 2024 Hack – Coins & GP for Team Upgrades
+
+Install
+1) Download and install eFootball 2024 Hack
+2) Launch and finish tutorial
+3) Resources sync automatically
+
+Tips
+- Build a balanced squad; upgrade key positions first
+
+Compatibility
+- iOS 12+ and Android 7+`,
         faqs: [
             { question: "Online ranked?", answer: "Stick to casual/offline for safety." },
             { question: "Root/jailbreak?", answer: "Not required." }
@@ -607,7 +831,15 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Ludo King Hack – Unlimited Coins & Diamonds\n\nInstall\n1) Download and install Ludo King Hack\n2) Open and complete intro\n3) Resources sync automatically\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `Ludo King Hack – Unlimited Coins & Diamonds
+
+Install
+1) Download and install Ludo King Hack
+2) Open and complete intro
+3) Resources sync automatically
+
+Compatibility
+- iOS 12+ / Android 7+`,
         faqs: [
             { question: "Online safety?", answer: "Use casually to minimize risk." },
             { question: "Persistence?", answer: "Applies while installed." }
@@ -623,7 +855,18 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Island War Hack – Unlimited Money & Gems for Faster Raids\n\nInstall\n1) Download and install Island War Hack\n2) Open and finish tutorial\n3) Resources sync automatically\n\nTips\n- Upgrade troops and boats before decorations\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `Island War Hack – Unlimited Money & Gems for Faster Raids
+
+Install
+1) Download and install Island War Hack
+2) Open and finish tutorial
+3) Resources sync automatically
+
+Tips
+- Upgrade troops and boats before decorations
+
+Compatibility
+- iOS 12+ and Android 7+`,
         faqs: [
             { question: "PvP?", answer: "Prefer casual to reduce risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
@@ -639,7 +882,15 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Valor Legends Hack – Unlimited Gems for Hero Upgrades\n\nInstall\n1) Download and install Valor Legends Hack\n2) Launch and complete intro\n3) Resources sync automatically\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `Valor Legends Hack – Unlimited Gems for Hero Upgrades
+
+Install
+1) Download and install Valor Legends Hack
+2) Launch and complete intro
+3) Resources sync automatically
+
+Compatibility
+- iOS 12+ and Android 7+`,
         faqs: [
             { question: "Online safety?", answer: "Stick to casual modes." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
@@ -655,7 +906,15 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `SWGOH Hack – Unlimited Crystals for Faster Progression\n\nInstall\n1) Download and install SWGOH Hack\n2) Open and complete intro\n3) Crystals sync automatically\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `SWGOH Hack – Unlimited Crystals for Faster Progression
+
+Install
+1) Download and install SWGOH Hack
+2) Open and complete intro
+3) Crystals sync automatically
+
+Compatibility
+- iOS 12+ and Android 7+`,
         faqs: [
             { question: "Arena/GAC?", answer: "Use casually; competitive may increase risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
@@ -671,7 +930,15 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Best Friends Hack – Unlimited Gold & Keys\n\nInstall\n1) Download and install Best Friends Hack\n2) Open and finish tutorial\n3) Resources sync automatically\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `Best Friends Hack – Unlimited Gold & Keys
+
+Install
+1) Download and install Best Friends Hack
+2) Open and finish tutorial
+3) Resources sync automatically
+
+Compatibility
+- iOS 12+ and Android 7+`,
         faqs: [
             { question: "Online events?", answer: "Prefer casual play modes." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
@@ -687,7 +954,18 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Beatstar Hack – Unlimited Gems for Tracks and Upgrades\n\nInstall\n1) Download and install Beatstar Hack\n2) Launch and complete intro\n3) Gems sync automatically\n\nTips\n- Lower latency setting for tighter timing\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `Beatstar Hack – Unlimited Gems for Tracks and Upgrades
+
+Install
+1) Download and install Beatstar Hack
+2) Launch and complete intro
+3) Gems sync automatically
+
+Tips
+- Lower latency setting for tighter timing
+
+Compatibility
+- iOS 12+ and Android 7+`,
         faqs: [
             { question: "Online?", answer: "Use casually to reduce risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
@@ -703,7 +981,18 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Hungry Shark World Hack – Unlimited Coins & Gems\n\nInstall\n1) Download and install HSW Hack\n2) Open and complete tutorial swim\n3) Resources sync automatically\n\nTips\n- Upgrade bite/speed/boost first\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `Hungry Shark World Hack – Unlimited Coins & Gems
+
+Install
+1) Download and install HSW Hack
+2) Open and complete tutorial swim
+3) Resources sync automatically
+
+Tips
+- Upgrade bite/speed/boost first
+
+Compatibility
+- iOS 12+ / Android 7+`,
         faqs: [
             { question: "Online safety?", answer: "Stick to casual to reduce risk." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
@@ -719,7 +1008,18 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Golf Battle Hack – Unlimited Gems & Coins\n\nInstall\n1) Download and install Golf Battle Hack\n2) Launch and finish tutorial putts\n3) Resources sync automatically\n\nTips\n- Optimize club and ball selection for map type\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `Golf Battle Hack – Unlimited Gems & Coins
+
+Install
+1) Download and install Golf Battle Hack
+2) Launch and finish tutorial putts
+3) Resources sync automatically
+
+Tips
+- Optimize club and ball selection for map type
+
+Compatibility
+- iOS 12+ / Android 7+`,
         faqs: [
             { question: "Ranked?", answer: "Prefer casual to reduce risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
@@ -735,7 +1035,21 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `FC Mobile – Install on iOS & Android (Guide)\n\nWhat you get\n- Easy install and setup with optimized steps\n\nInstall\n1) Download and install FC Mobile\n2) Open and sign in\n3) Start building your squad\n\nTips\n- Enable 60fps for smoother play on capable devices\n\nCompatibility\n- iOS 12+ / Android 7+`,
+        longDescription: `FC Mobile – Install on iOS & Android (Guide)
+
+What you get
+- Easy install and setup with optimized steps
+
+Install
+1) Download and install FC Mobile
+2) Open and sign in
+3) Start building your squad
+
+Tips
+- Enable 60fps for smoother play on capable devices
+
+Compatibility
+- iOS 12+ / Android 7+`,
         faqs: [
             { question: "Cross-save?", answer: "Progress syncs with your linked account." },
             { question: "Root/jailbreak?", answer: "Not required." }
@@ -1337,7 +1651,26 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `FR Legends Mod – Drift Racing with Unlimited Money\n\nWhat you get\n- Unlimited Money to buy cars, engines, parts and body kits\n- Unlock tracks, liveries and visual customization\n- Best used in single‑player and offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install FR Legends Mod\n2) Open the game and accept required permissions\n3) Money syncs automatically – start buying and upgrading freely\n\nTuning tips for higher drift score\n- Begin around 300–350hp on entry cars for balance\n- Slightly increase rear wheel grip for stable exits\n- Lower tire pressure for longer, smoother slides\n\nCompatibility\n- iOS 12+ and Android 7+ supported\n- Works on phones and tablets`,
+        longDescription: `FR Legends Mod – Drift Racing with Unlimited Money
+
+What you get
+- Unlimited Money to buy cars, engines, parts and body kits
+- Unlock tracks, liveries and visual customization
+- Best used in single‑player and offline modes
+
+How to install (iOS & Android)
+1) Tap Download and install FR Legends Mod
+2) Open the game and accept required permissions
+3) Money syncs automatically – start buying and upgrading freely
+
+Tuning tips for higher drift score
+- Begin around 300–350hp on entry cars for balance
+- Slightly increase rear wheel grip for stable exits
+- Lower tire pressure for longer, smoother slides
+
+Compatibility
+- iOS 12+ and Android 7+ supported
+- Works on phones and tablets`,
         faqs: [
             { question: "Is it safe for multiplayer?", answer: "Use at your own risk. Prefer offline/single‑player to minimize detection." },
             { question: "Do I need root or jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1355,7 +1688,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Dungeon Hunter 5 Mod – Action RPG with Unlimited Gems\n\nWhat you get\n- Unlimited Gems to craft gear, enhance skills and speed up progress\n- Faster dungeon clears and boss fights\n- Best used in campaign and offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Dungeon Hunter 5 Mod\n2) Open the game and complete the tutorial\n3) Gems sync automatically; start crafting and upgrading\n\nProgress tips\n- Focus on weapon synergy and elemental counters early\n- Upgrade survivability (armor/skills) before pushing higher tiers\n\nCompatibility\n- iOS 12+ and Android 7+; phones and tablets supported`,
+        longDescription: `Dungeon Hunter 5 Mod – Action RPG with Unlimited Gems
+
+What you get
+- Unlimited Gems to craft gear, enhance skills and speed up progress
+- Faster dungeon clears and boss fights
+- Best used in campaign and offline modes
+
+How to install (iOS & Android)
+1) Tap Download and install Dungeon Hunter 5 Mod
+2) Open the game and complete the tutorial
+3) Gems sync automatically; start crafting and upgrading
+
+Progress tips
+- Focus on weapon synergy and elemental counters early
+- Upgrade survivability (armor/skills) before pushing higher tiers
+
+Compatibility
+- iOS 12+ and Android 7+; phones and tablets supported`,
         faqs: [
             { question: "Is it safe for multiplayer?", answer: "We do not recommend competitive modes; use responsibly in PvE/campaign." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard devices." },
@@ -1373,7 +1723,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Looney Tunes™ World of Mayhem Mod – Collect Toons with Unlimited Gems & Gold\n\nWhat you get\n- Unlimited Gems & Gold to unlock toons and power up faster\n- Speed through events, campaigns and PvE battles\n- Best used outside competitive PvP modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Looney Tunes World of Mayhem Mod\n2) Open the game and finish the intro\n3) Resources sync automatically – start unlocking and upgrading toons\n\nTeam tips\n- Build synergistic teams (tank, support, damage) for PvE consistency\n- Focus on a core squad and star‑rank them first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Looney Tunes™ World of Mayhem Mod – Collect Toons with Unlimited Gems & Gold
+
+What you get
+- Unlimited Gems & Gold to unlock toons and power up faster
+- Speed through events, campaigns and PvE battles
+- Best used outside competitive PvP modes
+
+How to install (iOS & Android)
+1) Tap Download and install Looney Tunes World of Mayhem Mod
+2) Open the game and finish the intro
+3) Resources sync automatically – start unlocking and upgrading toons
+
+Team tips
+- Build synergistic teams (tank, support, damage) for PvE consistency
+- Focus on a core squad and star‑rank them first
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for PvP?", answer: "We recommend sticking to PvE; competitive modes may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1391,7 +1758,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Need for Speed™ No Limits Mod – Street Racing with Unlimited Money & Gold\n\nWhat you get\n- Unlimited Money & Gold to buy cars, parts and visual upgrades\n- Skip grind and unlock event requirements faster\n- Best used in single‑player events and offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install NFS No Limits Mod\n2) Open the game and complete the intro race\n3) Resources sync automatically – upgrade your garage\n\nTuning tips\n- Start with ECU and Turbo for best performance per cost\n- Balance Nitro with Tires to keep traction on corners\n\nCompatibility\n- iOS 12+ and Android 7+; phones and tablets supported`,
+        longDescription: `Need for Speed™ No Limits Mod – Street Racing with Unlimited Money & Gold
+
+What you get
+- Unlimited Money & Gold to buy cars, parts and visual upgrades
+- Skip grind and unlock event requirements faster
+- Best used in single‑player events and offline modes
+
+How to install (iOS & Android)
+1) Tap Download and install NFS No Limits Mod
+2) Open the game and complete the intro race
+3) Resources sync automatically – upgrade your garage
+
+Tuning tips
+- Start with ECU and Turbo for best performance per cost
+- Balance Nitro with Tires to keep traction on corners
+
+Compatibility
+- iOS 12+ and Android 7+; phones and tablets supported`,
         faqs: [
             { question: "Is it safe for online?", answer: "Avoid competitive modes; use responsibly in offline or casual events." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1409,7 +1793,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Ice Age Adventures Mod – Family Adventure with Unlimited Acorns\n\nWhat you get\n- Unlimited Acorns to rescue friends and build faster\n- Speed through story chapters and time‑limited events\n- Best used in offline and casual modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Ice Age Adventures Mod\n2) Open the game and finish the tutorial\n3) Acorns sync automatically – start rescuing and building\n\nProgress tips\n- Prioritize resource buildings early for steady progression\n- Save boosts for multi‑stage event chains\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Ice Age Adventures Mod – Family Adventure with Unlimited Acorns
+
+What you get
+- Unlimited Acorns to rescue friends and build faster
+- Speed through story chapters and time‑limited events
+- Best used in offline and casual modes
+
+How to install (iOS & Android)
+1) Tap Download and install Ice Age Adventures Mod
+2) Open the game and finish the tutorial
+3) Acorns sync automatically – start rescuing and building
+
+Progress tips
+- Prioritize resource buildings early for steady progression
+- Save boosts for multi‑stage event chains
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe online?", answer: "Use casually and avoid competitive leaderboards to reduce risk." },
             { question: "Need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1427,7 +1828,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Score! Hero 2022 Mod – Football Career with Unlimited Money\n\nWhat you get\n- Unlimited Money to unlock levels, retries and training faster\n- Progress through career chapters without grind\n- Best used in offline/casual modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Score! Hero 2022 Mod\n2) Open the game and complete the first tutorial level\n3) Resources sync automatically – continue your career\n\nPlay tips\n- Use curved swipes for top‑corner shots\n- Spend retries wisely on multi‑pass objectives\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Score! Hero 2022 Mod – Football Career with Unlimited Money
+
+What you get
+- Unlimited Money to unlock levels, retries and training faster
+- Progress through career chapters without grind
+- Best used in offline/casual modes
+
+How to install (iOS & Android)
+1) Tap Download and install Score! Hero 2022 Mod
+2) Open the game and complete the first tutorial level
+3) Resources sync automatically – continue your career
+
+Play tips
+- Use curved swipes for top‑corner shots
+- Spend retries wisely on multi‑pass objectives
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for ranked leaderboards?", answer: "Avoid competitive leaderboards to reduce detection risk." },
             { question: "Need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1445,7 +1863,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Gangstar Vegas Mod – Open-World Action with Unlimited Diamonds & Money\n\nWhat you get\n- Unlimited Diamonds & Money for vehicles, weapons and upgrades\n- Faster story progress and city takeovers\n- Best used in offline/free‑roam and non‑competitive modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Gangstar Vegas Mod\n2) Open the game and complete the intro mission\n3) Resources sync automatically – start upgrading and exploring\n\nPlay tips\n- Prioritize armor and mobility early for survivability\n- Save premium vehicles for missions with strict timers\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Gangstar Vegas Mod – Open-World Action with Unlimited Diamonds & Money
+
+What you get
+- Unlimited Diamonds & Money for vehicles, weapons and upgrades
+- Faster story progress and city takeovers
+- Best used in offline/free‑roam and non‑competitive modes
+
+How to install (iOS & Android)
+1) Tap Download and install Gangstar Vegas Mod
+2) Open the game and complete the intro mission
+3) Resources sync automatically – start upgrading and exploring
+
+Play tips
+- Prioritize armor and mobility early for survivability
+- Save premium vehicles for missions with strict timers
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe online?", answer: "Avoid competitive/online events to minimize detection risk." },
             { question: "Need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1463,7 +1898,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Dislyte Mod – Mythic RPG Squad with Unlimited Crystals & Gold\n\nWhat you get\n- Unlimited Crystals & Gold to summon espers and upgrade relics\n- Faster progression through story, events and trials\n- Best used in PvE modes to reduce detection risk\n\nHow to install (iOS & Android)\n1) Tap Download and install Dislyte Mod\n2) Open the game and finish the tutorial fights\n3) Resources sync automatically – start summoning and upgrading\n\nTeam tips\n- Build balanced teams (damage, support, control) for consistent clears\n- Prioritize core relic upgrades on carries first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Dislyte Mod – Mythic RPG Squad with Unlimited Crystals & Gold
+
+What you get
+- Unlimited Crystals & Gold to summon espers and upgrade relics
+- Faster progression through story, events and trials
+- Best used in PvE modes to reduce detection risk
+
+How to install (iOS & Android)
+1) Tap Download and install Dislyte Mod
+2) Open the game and finish the tutorial fights
+3) Resources sync automatically – start summoning and upgrading
+
+Team tips
+- Build balanced teams (damage, support, control) for consistent clears
+- Prioritize core relic upgrades on carries first
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for PvP?", answer: "We recommend PvE only; ranked PvP may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1481,7 +1933,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `The Wolf Mod – Online RPG Simulator with Unlimited Gems & Money\n\nWhat you get\n- Unlimited Gems & Money to unlock wolves, skills and skins\n- Faster progression in PvE hunts and exploration\n- Best used in casual/non‑competitive rooms\n\nHow to install (iOS & Android)\n1) Tap Download and install The Wolf Mod\n2) Open the game and complete the short tutorial\n3) Resources sync automatically – upgrade your wolf and explore\n\nPlay tips\n- Prioritize damage and stamina early for efficient hunts\n- Team up in co‑op hunts for faster XP and loot\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `The Wolf Mod – Online RPG Simulator with Unlimited Gems & Money
+
+What you get
+- Unlimited Gems & Money to unlock wolves, skills and skins
+- Faster progression in PvE hunts and exploration
+- Best used in casual/non‑competitive rooms
+
+How to install (iOS & Android)
+1) Tap Download and install The Wolf Mod
+2) Open the game and complete the short tutorial
+3) Resources sync automatically – upgrade your wolf and explore
+
+Play tips
+- Prioritize damage and stamina early for efficient hunts
+- Team up in co‑op hunts for faster XP and loot
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for multiplayer?", answer: "Avoid competitive lobbies; use responsibly in casual PvE hunts." },
             { question: "Need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1499,7 +1968,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Traffic Rider Mod – First‑Person Motorcycle with Unlimited Money & Cash\n\nWhat you get\n- Unlimited Money & Cash to buy bikes and performance parts\n- Unlock career tiers and challenges faster\n- Best used in offline/casual modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Traffic Rider Mod\n2) Open the game and complete the first ride\n3) Resources sync automatically – start upgrading your bike\n\nRiding tips\n- Maintain 100+ km/h for score multipliers\n- Near‑miss cars and ride opposite lane (with caution) for bonus points\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Traffic Rider Mod – First‑Person Motorcycle with Unlimited Money & Cash
+
+What you get
+- Unlimited Money & Cash to buy bikes and performance parts
+- Unlock career tiers and challenges faster
+- Best used in offline/casual modes
+
+How to install (iOS & Android)
+1) Tap Download and install Traffic Rider Mod
+2) Open the game and complete the first ride
+3) Resources sync automatically – start upgrading your bike
+
+Riding tips
+- Maintain 100+ km/h for score multipliers
+- Near‑miss cars and ride opposite lane (with caution) for bonus points
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for online?", answer: "Avoid competitive leaderboards; use responsibly in offline modes." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1517,7 +2003,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Skullgirls Mod – 2D Fighting RPG with Unlimited Theonite\n\nWhat you get\n- Unlimited Theonite to summon fighters and expand your roster\n- Faster progression in story, events and prize fights\n- Best used in PvE/practice to reduce detection risk\n\nHow to install (iOS & Android)\n1) Tap Download and install Skullgirls Mod\n2) Open the game and complete the tutorial fight\n3) Theonite syncs automatically – start summoning and upgrading\n\nPlay tips\n- Focus on synergy teams and meter management\n- Upgrade core moves on your main carry first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Skullgirls Mod – 2D Fighting RPG with Unlimited Theonite
+
+What you get
+- Unlimited Theonite to summon fighters and expand your roster
+- Faster progression in story, events and prize fights
+- Best used in PvE/practice to reduce detection risk
+
+How to install (iOS & Android)
+1) Tap Download and install Skullgirls Mod
+2) Open the game and complete the tutorial fight
+3) Theonite syncs automatically – start summoning and upgrading
+
+Play tips
+- Focus on synergy teams and meter management
+- Upgrade core moves on your main carry first
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for ranked/prize fights?", answer: "We recommend PvE & training; competitive modes may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1535,7 +2038,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Infinity Kingdom Mod – Strategy Builder with Unlimited Gems\n\nWhat you get\n- Unlimited Gems to speed buildings, research and summons\n- Faster progression across PvE and events\n- Best used carefully in alliance contexts\n\nHow to install (iOS & Android)\n1) Tap Download and install Infinity Kingdom Mod\n2) Open the game and finish the tutorial\n3) Gems sync automatically – start upgrading and training\n\nStrategy tips\n- Keep builders active and research queued at all times\n- Focus on a core immortal team and synergy artifacts first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Infinity Kingdom Mod – Strategy Builder with Unlimited Gems
+
+What you get
+- Unlimited Gems to speed buildings, research and summons
+- Faster progression across PvE and events
+- Best used carefully in alliance contexts
+
+How to install (iOS & Android)
+1) Tap Download and install Infinity Kingdom Mod
+2) Open the game and finish the tutorial
+3) Gems sync automatically – start upgrading and training
+
+Strategy tips
+- Keep builders active and research queued at all times
+- Focus on a core immortal team and synergy artifacts first
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for alliances/competitive?", answer: "Use responsibly; competitive use may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1553,7 +2073,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Mighty Party Mod – Hero Battler with Unlimited Gems & Coins\n\nWhat you get\n- Unlimited Gems & Coins to summon heroes and upgrade faster\n- Accelerated progression through story, events and trials\n- Best used in PvE and casual arenas\n\nHow to install (iOS & Android)\n1) Tap Download and install Mighty Party Mod\n2) Open the game and complete the tutorial battles\n3) Resources sync automatically – start summoning and upgrading\n\nTeam tips\n- Build balanced teams (frontline, damage, support) for consistency\n- Focus upgrades on a core carry and synergy passives first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Mighty Party Mod – Hero Battler with Unlimited Gems & Coins
+
+What you get
+- Unlimited Gems & Coins to summon heroes and upgrade faster
+- Accelerated progression through story, events and trials
+- Best used in PvE and casual arenas
+
+How to install (iOS & Android)
+1) Tap Download and install Mighty Party Mod
+2) Open the game and complete the tutorial battles
+3) Resources sync automatically – start summoning and upgrading
+
+Team tips
+- Build balanced teams (frontline, damage, support) for consistency
+- Focus upgrades on a core carry and synergy passives first
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for ranked PVP?", answer: "We recommend PvE/casual only; competitive play may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1571,7 +2108,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Pocket Troops Mod – Tactical Squad with Unlimited Coins & Cash\n\nWhat you get\n- Unlimited Coins & Cash to recruit, train and gear up faster\n- Speed up base upgrades and unit progression\n- Best used in PvE, campaigns and casual modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Pocket Troops Mod\n2) Open the game and complete the tutorial mission\n3) Resources sync automatically – start training and upgrading\n\nStrategy tips\n- Build a balanced squad (tank, DPS, support) and upgrade core skills first\n- Prioritize weapon tiers that fit your mission type\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Pocket Troops Mod – Tactical Squad with Unlimited Coins & Cash
+
+What you get
+- Unlimited Coins & Cash to recruit, train and gear up faster
+- Speed up base upgrades and unit progression
+- Best used in PvE, campaigns and casual modes
+
+How to install (iOS & Android)
+1) Tap Download and install Pocket Troops Mod
+2) Open the game and complete the tutorial mission
+3) Resources sync automatically – start training and upgrading
+
+Strategy tips
+- Build a balanced squad (tank, DPS, support) and upgrade core skills first
+- Prioritize weapon tiers that fit your mission type
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for clan wars/competitive?", answer: "Prefer PvE/casual modes; competitive use may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1589,7 +2143,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Top War Mod – Merge Strategy with Unlimited Diamonds & Coins\n\nWhat you get\n- Unlimited Diamonds & Coins to speed buildings, merges and research\n- Faster progress through campaigns, events and tech trees\n- Best used responsibly in alliance contexts\n\nHow to install (iOS & Android)\n1) Tap Download and install Top War Mod\n2) Open the game and finish the tutorial\n3) Resources sync automatically – start merging and upgrading\n\nStrategy tips\n- Keep merges efficient; avoid fragmenting unit tiers\n- Maintain research queues and expand builders for constant growth\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Top War Mod – Merge Strategy with Unlimited Diamonds & Coins
+
+What you get
+- Unlimited Diamonds & Coins to speed buildings, merges and research
+- Faster progress through campaigns, events and tech trees
+- Best used responsibly in alliance contexts
+
+How to install (iOS & Android)
+1) Tap Download and install Top War Mod
+2) Open the game and finish the tutorial
+3) Resources sync automatically – start merging and upgrading
+
+Strategy tips
+- Keep merges efficient; avoid fragmenting unit tiers
+- Maintain research queues and expand builders for constant growth
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for alliances/competitive?", answer: "Use carefully; competitive modes may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1607,7 +2178,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `War and Order Mod – Strategy War with Unlimited Gems & Coins\n\nWhat you get\n- Unlimited Gems & Coins to speed buildings, research and troop training\n- Faster expansion across campaigns, events and alliance tech\n- Best used carefully in alliance/competitive contexts\n\nHow to install (iOS & Android)\n1) Tap Download and install War and Order Mod\n2) Open the game and finish the tutorial\n3) Resources sync automatically – start upgrading and training\n\nStrategy tips\n- Keep builders and research queues active for constant growth\n- Focus on a core march composition and counter enemy matchups\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `War and Order Mod – Strategy War with Unlimited Gems & Coins
+
+What you get
+- Unlimited Gems & Coins to speed buildings, research and troop training
+- Faster expansion across campaigns, events and alliance tech
+- Best used carefully in alliance/competitive contexts
+
+How to install (iOS & Android)
+1) Tap Download and install War and Order Mod
+2) Open the game and finish the tutorial
+3) Resources sync automatically – start upgrading and training
+
+Strategy tips
+- Keep builders and research queues active for constant growth
+- Focus on a core march composition and counter enemy matchups
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for alliances/competitive?", answer: "Use responsibly; competitive use may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1625,7 +2213,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `World Chef Mod – Restaurant Builder with Unlimited Gems & Gold\n\nWhat you get\n- Unlimited Gems & Gold to speed cooking, decor and expansion\n- Unlock chefs, recipes and furniture faster\n- Best used in casual/offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install World Chef Mod\n2) Open the game and complete the intro orders\n3) Resources sync automatically – start decorating and expanding\n\nPlay tips\n- Keep appliances running; queue longer recipes overnight\n- Invest in decor that boosts rating and customer tips\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `World Chef Mod – Restaurant Builder with Unlimited Gems & Gold
+
+What you get
+- Unlimited Gems & Gold to speed cooking, decor and expansion
+- Unlock chefs, recipes and furniture faster
+- Best used in casual/offline modes
+
+How to install (iOS & Android)
+1) Tap Download and install World Chef Mod
+2) Open the game and complete the intro orders
+3) Resources sync automatically – start decorating and expanding
+
+Play tips
+- Keep appliances running; queue longer recipes overnight
+- Invest in decor that boosts rating and customer tips
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe online?", answer: "Use casually; competitive rankings may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1643,7 +2248,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Angry Birds Evolution Mod – Collect & Evolve with Unlimited Gems & Coins\n\nWhat you get\n- Unlimited Gems & Coins to open eggs, evolve birds and speed upgrades\n- Faster progress through campaigns, events and PvE battles\n- Best used in casual/non‑competitive modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Angry Birds Evolution Mod\n2) Open the game and complete the tutorial match\n3) Resources sync automatically – start hatching and evolving\n\nPlay tips\n- Focus on a core team and evolve them before spreading resources\n- Save premium hatches for event rate‑ups\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Angry Birds Evolution Mod – Collect & Evolve with Unlimited Gems & Coins
+
+What you get
+- Unlimited Gems & Coins to open eggs, evolve birds and speed upgrades
+- Faster progress through campaigns, events and PvE battles
+- Best used in casual/non‑competitive modes
+
+How to install (iOS & Android)
+1) Tap Download and install Angry Birds Evolution Mod
+2) Open the game and complete the tutorial match
+3) Resources sync automatically – start hatching and evolving
+
+Play tips
+- Focus on a core team and evolve them before spreading resources
+- Save premium hatches for event rate‑ups
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for competitive play?", answer: "Prefer PvE/casual; ranked/competitive use may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1661,7 +2283,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Project Makeover Mod – Match‑3 Makeovers with Unlimited Gems & Coins\n\nWhat you get\n- Unlimited Gems & Coins to unlock outfits, decor and power‑ups\n- Progress faster through makeover stories and events\n- Best used in casual/offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Project Makeover Mod\n2) Open the game and complete the intro puzzle\n3) Resources sync automatically – start styling and renovating\n\nPlay tips\n- Save boosters for hard levels with blockers and tight move counts\n- Focus on high‑impact decor for better client ratings\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Project Makeover Mod – Match‑3 Makeovers with Unlimited Gems & Coins
+
+What you get
+- Unlimited Gems & Coins to unlock outfits, decor and power‑ups
+- Progress faster through makeover stories and events
+- Best used in casual/offline modes
+
+How to install (iOS & Android)
+1) Tap Download and install Project Makeover Mod
+2) Open the game and complete the intro puzzle
+3) Resources sync automatically – start styling and renovating
+
+Play tips
+- Save boosters for hard levels with blockers and tight move counts
+- Focus on high‑impact decor for better client ratings
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for leaderboards?", answer: "Prefer casual play; leaderboards may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1679,7 +2318,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Basketball Stars Mod – 1v1 Hoops with Unlimited Money & Gold\n\nWhat you get\n- Unlimited Money & Gold to unlock balls, courts and gear\n- Faster upgrades and cosmetics for your player\n- Best used in casual/offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Basketball Stars Mod\n2) Open the game and complete the intro match\n3) Resources sync automatically – start upgrading and styling\n\nPlay tips\n- Mix fakes and crossovers; time shots at peak jump\n- Use gear bonuses that boost accuracy and steal resistance\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Basketball Stars Mod – 1v1 Hoops with Unlimited Money & Gold
+
+What you get
+- Unlimited Money & Gold to unlock balls, courts and gear
+- Faster upgrades and cosmetics for your player
+- Best used in casual/offline modes
+
+How to install (iOS & Android)
+1) Tap Download and install Basketball Stars Mod
+2) Open the game and complete the intro match
+3) Resources sync automatically – start upgrading and styling
+
+Play tips
+- Mix fakes and crossovers; time shots at peak jump
+- Use gear bonuses that boost accuracy and steal resistance
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for ranked online?", answer: "Prefer casual play; ranked modes may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1697,7 +2353,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Disney Heroes Mod – Squad RPG with Unlimited Diamonds & Gold\n\nWhat you get\n- Unlimited Diamonds & Gold to summon, rank up and upgrade disks\n- Faster progress through campaign, trials and events\n- Best used in PvE and casual modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Disney Heroes Mod\n2) Open the game and finish the intro battles\n3) Resources sync automatically – start building your squad\n\nTeam tips\n- Build balanced teams (tank, support, damage, control)\n- Prioritize key disks and rank ups on your main carry first\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Disney Heroes Mod – Squad RPG with Unlimited Diamonds & Gold
+
+What you get
+- Unlimited Diamonds & Gold to summon, rank up and upgrade disks
+- Faster progress through campaign, trials and events
+- Best used in PvE and casual modes
+
+How to install (iOS & Android)
+1) Tap Download and install Disney Heroes Mod
+2) Open the game and finish the intro battles
+3) Resources sync automatically – start building your squad
+
+Team tips
+- Build balanced teams (tank, support, damage, control)
+- Prioritize key disks and rank ups on your main carry first
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for PvP/leaderboards?", answer: "Prefer PvE/casual; competitive use may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1715,7 +2388,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Lily's Garden Mod – Match‑3 Renovations with Unlimited Stars & Coins\n\nWhat you get\n- Unlimited Stars & Coins to unlock renovations and story chapters\n- Progress faster through puzzles and events\n- Best used in casual/offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Lily's Garden Mod\n2) Open the game and complete the first puzzle\n3) Resources sync automatically – start renovating the garden\n\nPlay tips\n- Save boosters for hard levels with blockers\n- Chain large matches for higher score and extra moves\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Lily's Garden Mod – Match‑3 Renovations with Unlimited Stars & Coins
+
+What you get
+- Unlimited Stars & Coins to unlock renovations and story chapters
+- Progress faster through puzzles and events
+- Best used in casual/offline modes
+
+How to install (iOS & Android)
+1) Tap Download and install Lily's Garden Mod
+2) Open the game and complete the first puzzle
+3) Resources sync automatically – start renovating the garden
+
+Play tips
+- Save boosters for hard levels with blockers
+- Chain large matches for higher score and extra moves
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for leaderboards?", answer: "Prefer casual play; leaderboards may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1733,7 +2423,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Tennis Clash Mod – Online Tennis with Unlimited Gems & Coins\n\nWhat you get\n- Unlimited Gems & Coins to unlock rackets, strings and outfits\n- Faster upgrades for power, accuracy and agility\n- Best used in casual/offline modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Tennis Clash Mod\n2) Open the game and complete the tutorial rally\n3) Resources sync automatically – start upgrading your gear\n\nPlay tips\n- Time swipes at ball peak for higher accuracy and speed\n- Equip strings that complement your build (power vs. control)\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Tennis Clash Mod – Online Tennis with Unlimited Gems & Coins
+
+What you get
+- Unlimited Gems & Coins to unlock rackets, strings and outfits
+- Faster upgrades for power, accuracy and agility
+- Best used in casual/offline modes
+
+How to install (iOS & Android)
+1) Tap Download and install Tennis Clash Mod
+2) Open the game and complete the tutorial rally
+3) Resources sync automatically – start upgrading your gear
+
+Play tips
+- Time swipes at ball peak for higher accuracy and speed
+- Equip strings that complement your build (power vs. control)
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for ranked matches?", answer: "Prefer casual play; ranked modes may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1751,7 +2458,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `PvZ Heroes Mod – Card Battler with Unlimited Gems & Cards\n\nWhat you get\n- Unlimited Gems & Cards to craft decks and upgrade heroes faster\n- Accelerated progress through campaign, challenges and events\n- Best used in casual/non‑competitive modes\n\nHow to install (iOS & Android)\n1) Tap Download and install PvZ Heroes Mod\n2) Open the game and complete the tutorial match\n3) Resources sync automatically – start building your deck\n\nDeck tips\n- Focus on a core hero strategy (tempo, control, combo)\n- Curve your mana costs and include reliable removal\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `PvZ Heroes Mod – Card Battler with Unlimited Gems & Cards
+
+What you get
+- Unlimited Gems & Cards to craft decks and upgrade heroes faster
+- Accelerated progress through campaign, challenges and events
+- Best used in casual/non‑competitive modes
+
+How to install (iOS & Android)
+1) Tap Download and install PvZ Heroes Mod
+2) Open the game and complete the tutorial match
+3) Resources sync automatically – start building your deck
+
+Deck tips
+- Focus on a core hero strategy (tempo, control, combo)
+- Curve your mana costs and include reliable removal
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for ranked play?", answer: "Prefer casual modes; ranked/ladder may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1769,7 +2493,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `NBA Live Mobile Mod – Ultimate Team with Unlimited Cash & Coins\n\nWhat you get\n- Unlimited Cash & Coins to open packs and upgrade players\n- Faster team building, training and lineup boosts\n- Best used in casual modes and offline events\n\nHow to install (iOS & Android)\n1) Tap Download and install NBA Live Mobile Mod\n2) Open the game and complete the intro drills\n3) Resources sync automatically – start upgrading your lineup\n\nPlay tips\n- Focus on a core lineup; upgrade chemistries for bigger boosts\n- Practice release timing to raise field goal percentage\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `NBA Live Mobile Mod – Ultimate Team with Unlimited Cash & Coins
+
+What you get
+- Unlimited Cash & Coins to open packs and upgrade players
+- Faster team building, training and lineup boosts
+- Best used in casual modes and offline events
+
+How to install (iOS & Android)
+1) Tap Download and install NBA Live Mobile Mod
+2) Open the game and complete the intro drills
+3) Resources sync automatically – start upgrading your lineup
+
+Play tips
+- Focus on a core lineup; upgrade chemistries for bigger boosts
+- Practice release timing to raise field goal percentage
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for ranked/online?", answer: "Prefer casual/offline; ranked may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1787,7 +2528,24 @@ Accelerate research, expand your city, and dominate events without waiting. This
         version: "1.0.0",
         size: "Varies",
         category: "Games",
-        longDescription: `Dragon Mania Legends Mod – Breed & Train with Unlimited Gems & Coins\n\nWhat you get\n- Unlimited Gems & Coins to hatch eggs, speed breeding and upgrades\n- Faster habitat expansion and event progression\n- Best used in casual/non‑competitive modes\n\nHow to install (iOS & Android)\n1) Tap Download and install Dragon Mania Legends Mod\n2) Open the game and finish the tutorial\n3) Resources sync automatically – start breeding and upgrading\n\nBreeding tips\n- Use compatible elements for higher‑tier outcomes\n- Prioritize habitat capacity and gold farms early\n\nCompatibility\n- iOS 12+ and Android 7+ supported`,
+        longDescription: `Dragon Mania Legends Mod – Breed & Train with Unlimited Gems & Coins
+
+What you get
+- Unlimited Gems & Coins to hatch eggs, speed breeding and upgrades
+- Faster habitat expansion and event progression
+- Best used in casual/non‑competitive modes
+
+How to install (iOS & Android)
+1) Tap Download and install Dragon Mania Legends Mod
+2) Open the game and finish the tutorial
+3) Resources sync automatically – start breeding and upgrading
+
+Breeding tips
+- Use compatible elements for higher‑tier outcomes
+- Prioritize habitat capacity and gold farms early
+
+Compatibility
+- iOS 12+ and Android 7+ supported`,
         faqs: [
             { question: "Is it safe for online events/leagues?", answer: "Prefer PvE/casual; competitive use may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
@@ -1802,7 +2560,7 @@ export const apps: App[] = appData.map((app, index) => ({
   ...app,
   id: index + 1,
   // Make sure the name property is set from title
-  name: app.name || app.title,
+  name: app.name,
 }));
 
     
