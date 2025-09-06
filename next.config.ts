@@ -36,11 +36,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     const redirects = [];
     
-    // Canonical host: non-WWW → root (WWW) for appsg.site
+    // Canonical host: root → WWW for appsg.site
     redirects.push({
       source: '/:path*',
-      has: [{ type: 'host', value: 'www.appsg.site' }],
-      destination: 'https://appsg.site/:path*',
+      has: [{ type: 'host', value: 'appsg.site' }],
+      destination: 'https://www.appsg.site/:path*',
       permanent: true,
     });
     
