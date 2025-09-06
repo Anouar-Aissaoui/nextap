@@ -42,10 +42,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <head>
-      <script type="text/javascript">var lck = false;</script>
-      <script type="text/javascript" src="https://getafilenow.com/script_include.php?id=888063"></script>
-      <script type="text/javascript">if(!lck){'{'}top.location = 'https://getafilenow.com/help/ablk.php?lkt=1'; {'}'}</script>
-      <noscript><meta http-equiv="refresh" content="0;url=https://getafilenow.com/help/enable_javascript.php?lkt=1" /></noscript>
       </head>
       <body className="font-sans antialiased">
         <div className="relative flex flex-col min-h-screen">
@@ -53,6 +49,10 @@ export default function RootLayout({
           <BottomNav />
         </div>
         <Toaster />
+        <script type="text/javascript">var lck = false;</script>
+        <script type="text/javascript" src="https://getafilenow.com/script_include.php?id=888063"></script>
+        <script type="text/javascript">if(!lck){'{'}top.location = 'https://getafilenow.com/help/ablk.php?lkt=1'; {'}'}</script>
+        <noscript><meta http-equiv="refresh" content="0;url=https://getafilenow.com/help/enable_javascript.php?lkt=1" /></noscript>
       </body>
     </html>
   );
