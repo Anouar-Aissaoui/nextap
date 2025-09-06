@@ -9,6 +9,14 @@ import type { FullAppInfo } from '@/app/page';
 export default function AppCard({ app, index }: { app: FullAppInfo, index: number }) {
   const hasUrl = !!app.url;
 
+  const handleGetClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (app.url) {
+      window.open(app.url, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   return (
     <Link href={`/apps/${app.slug}`} className="group block">
         <div className="flex items-center gap-4 px-4 py-2.5 border-b last:border-b-0">
@@ -31,10 +39,7 @@ export default function AppCard({ app, index }: { app: FullAppInfo, index: numbe
                   variant="ghost" 
                   size="sm" 
                   className="rounded-full font-bold text-primary bg-primary/10 hover:bg-primary/20"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    window.open(app.url, '_blank', 'noopener,noreferrer');
-                  }}
+                  onClick={handleGetClick}
                 >
                   Get
                 </Button>
