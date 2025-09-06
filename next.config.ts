@@ -1,6 +1,8 @@
 
 import type {NextConfig} from 'next';
 
+const enableUtmCleanup = process.env.STRIP_UTM === '1';
+
 const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
@@ -30,25 +32,47 @@ const nextConfig: NextConfig = {
       }
     ],
   },
+  trailingSlash: false,
   async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'www.appsg.site',
-          },
-        ],
-        destination: 'https://appsg.site/:path*',
-        permanent: true,
-      },
-      {
+    const redirects = [];
+    
+    // Canonical host: non-WWW → root (WWW) for appsg.site
+    redirects.push({
+      source: '/:path*',
+      has: [{ type: 'host', value: 'www.appsg.site' }],
+      destination: 'https://appsg.site/:path*',
+      permanent: true,
+    });
+    
+    // Collapse trailing slashes -> non-slash canonical
+    redirects.push({
         source: '/:path+/',
         destination: '/:path+',
         permanent: true,
-      },
-    ];
+    });
+    
+    // Strip /index at the end of the URL path (root and nested)
+    redirects.push(
+      { source: '/:path*/index', destination: '/:path*', permanent: true },
+      { source: '/:path*/index/', destination: '/:path*', permanent: true },
+      { source: '/:path*/index.html', destination: '/:path*', permanent: true }
+    );
+    
+    // Optional: Cleanup UTM params by redirecting to the same path without any query string.
+    // WARNING: Enabling this will drop ALL query parameters if any UTM param is present.
+    if (enableUtmCleanup) {
+      const utms = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+      utms.forEach((key) => {
+        redirects.push({
+          source: '/:path*',
+          has: [{ type: 'query', key }],
+          destination: '/:path*',
+          permanent: true,
+        });
+      });
+    }
+    
+    return redirects;
   },
 };
 
