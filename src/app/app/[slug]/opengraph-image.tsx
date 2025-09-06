@@ -17,14 +17,6 @@ type OpengraphImageProps = {
   };
 };
 
-// As this is a dynamic route, we need to generate the static params
-// to avoid issues with the image generation.
-export async function generateStaticParams() {
-  return apps.map((app) => ({
-    slug: app.slug,
-  }));
-}
-
 export default async function OpengraphImage({ params }: OpengraphImageProps) {
   const app = apps.find(app => app.slug === params.slug);
 
