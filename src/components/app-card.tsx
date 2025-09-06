@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -25,10 +27,16 @@ export default function AppCard({ app, index }: { app: FullAppInfo, index: numbe
             </div>
             <div className="ml-auto">
               {hasUrl ? (
-                <Button asChild variant="ghost" size="sm" className="rounded-full font-bold text-primary bg-primary/10 hover:bg-primary/20">
-                  <a href={app.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
-                    Get
-                  </a>
+                <Button 
+                  variant="ghost" 
+                  size="sm" 
+                  className="rounded-full font-bold text-primary bg-primary/10 hover:bg-primary/20"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(app.url, '_blank', 'noopener,noreferrer');
+                  }}
+                >
+                  Get
                 </Button>
               ) : (
                 <Button variant="ghost" size="icon" className="rounded-full text-primary" disabled>
