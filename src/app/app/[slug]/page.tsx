@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: AppDetailPageProps): Promise<
   const siteUrl = 'https://www.appsg.site';
   const canonicalUrl = `${siteUrl}/app/${app.slug}`;
   const title = `${app.name} - ${app.description}`;
-  const siteName = "App Discovery Hub";
+  const siteName = "AppsGU";
 
   return {
     title: {

@@ -18,7 +18,7 @@ export default async function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    'name': 'App Discovery Hub - Curated Mobile Apps',
+    'name': 'AppsGU - Curated Mobile Apps',
     'description': 'A curated list of the best modded and tweaked apps for iOS and Android devices.',
     'url': siteUrl,
     'itemListElement': categorizedApps.map((app, index) => ({
@@ -59,7 +59,7 @@ export default async function Home() {
       <header className="sticky top-0 bg-background/95 backdrop-blur-sm z-10 border-b">
           <div className="container mx-auto px-4 py-6">
               <h1 className="text-3xl font-bold">
-                  App Discovery Hub
+                  AppsGU
               </h1>
               <h2 className="text-lg text-muted-foreground mt-1">Discover Your Next Favorite App</h2>
               <p className="text-sm text-muted-foreground mt-2 max-w-2xl">

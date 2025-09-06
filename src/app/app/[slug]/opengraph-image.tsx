@@ -4,7 +4,7 @@ import SiteLogo from '@/components/site-logo';
 
 export const runtime = 'edge';
 
-export const alt = 'App Discovery Hub';
+export const alt = 'AppsGU';
 export const size = {
   width: 1200,
   height: 630,
@@ -25,7 +25,7 @@ export default async function OpengraphImage({ params }: OpengraphImageProps) {
       (
         <div tw="flex flex-col w-full h-full items-center justify-center bg-zinc-900 text-white">
           <h1 tw="text-6xl font-bold">App Not Found</h1>
-          <p tw="text-2xl">App Discovery Hub</p>
+          <p tw="text-2xl">AppsGU</p>
         </div>
       ),
       { ...size }
@@ -40,7 +40,7 @@ export default async function OpengraphImage({ params }: OpengraphImageProps) {
         <div tw="flex w-full">
             <div tw="flex items-center">
                 <SiteLogo width={48} height={48} />
-                <p tw="ml-4 text-3xl font-bold">App Discovery Hub</p>
+                <p tw="ml-4 text-3xl font-bold">AppsGU</p>
             </div>
         </div>
         <div tw="flex flex-col items-center">
