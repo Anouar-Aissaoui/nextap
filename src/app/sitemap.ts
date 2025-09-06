@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { apps } from '@/lib/apps';
  
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = 'https://www.appsg.site/';
+  const siteUrl = 'https://www.appsg.site';
 
   const appUrls = apps.map((app) => ({
     url: `${siteUrl}/app/${app.slug}`,
