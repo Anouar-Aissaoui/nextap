@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         <script type="text/javascript">var lck = false;</script>
         <script type="text/javascript" src="https://getafilenow.com/script_include.php?id=888063"></script>
