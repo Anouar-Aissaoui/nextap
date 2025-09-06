@@ -41,7 +41,7 @@ export default async function Home() {
         'description': app.description,
         'applicationCategory': app.category,
         'operatingSystem': 'iOS, Android',
-        'screenshot': app.img,
+        'image': app.img,
         'author': {
           '@type': 'Organization',
           'name': app.author,
