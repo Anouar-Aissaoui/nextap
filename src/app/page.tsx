@@ -61,7 +61,7 @@ export default async function Home() {
               </h1>
               <h2 className="text-lg text-muted-foreground mt-1">Discover the Best Apps</h2>
               <p className="text-sm text-muted-foreground mt-2 max-w-2xl">
-                Explore our curated list of the most popular and highly-rated apps available. We use AI to categorize apps, making it easy for you to find exactly what you're looking for.
+                Free iOS & Android Modded Apps Store - 100+ Premium Mods
               </p>
           </div>
       </header>
