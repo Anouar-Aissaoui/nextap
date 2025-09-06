@@ -26,7 +26,8 @@ export async function generateMetadata({ params }: AppDetailPageProps): Promise<
   }
 
   const siteUrl = 'https://www.appsg.site/';
-  const canonicalUrl = `${siteUrl}/app/${app.slug}`;
+  const canonicalUrl = `${siteUrl}app/${app.slug}`;
+  const ogImageUrl = `https://picsum.photos/seed/${app.slug}/1200/630`;
 
   return {
     title: `${app.name} - Download Now`,
@@ -35,18 +36,18 @@ export async function generateMetadata({ params }: AppDetailPageProps): Promise<
       canonical: canonicalUrl,
     },
     openGraph: {
-      title: `${app.name} - App Discovery Hub`,
+      title: `${app.name} - AppsGU`,
       description: app.description,
       url: canonicalUrl,
       images: [
         {
-          url: app.img,
-          width: 150,
-          height: 150,
-          alt: `${app.name} icon`,
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: `${app.name} feature image`,
         },
       ],
-      siteName: 'App Discovery Hub',
+      siteName: 'AppsGU',
       locale: 'en_US',
       type: 'website',
     },

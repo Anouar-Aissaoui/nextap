@@ -17,7 +17,15 @@ export const metadata: Metadata = {
     title: 'iOS & Android Modded Apps – Free Downloads | AppsGU',
     description: 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.',
     url: siteUrl,
-    siteName: 'App Discovery Hub',
+    siteName: 'AppsGU',
+    images: [
+      {
+        url: 'https://www.appsg.site/og-image.png', // Must be an absolute URL
+        width: 1200,
+        height: 630,
+        alt: 'AppsGU - Free Modded Apps for iOS & Android',
+      },
+    ],
     locale: 'en_US',
     type: 'website',
   },

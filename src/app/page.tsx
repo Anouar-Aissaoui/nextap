@@ -7,10 +7,9 @@ export const revalidate = 60; // Revalidate every 60 seconds
 export type FullAppInfo = App & { category: string };
 
 export default async function Home() {
-  // AI categorization is no longer needed as the static data includes categories.
   const categorizedApps: FullAppInfo[] = apps.map(app => ({
     ...app,
-    category: app.category || 'Utilities', // Fallback for safety
+    category: app.category || 'Utilities', 
   }));
 
   const siteUrl = 'https://www.appsg.site/';
@@ -19,7 +18,7 @@ export default async function Home() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     'url': siteUrl,
-    'name': 'App Discovery Hub',
+    'name': 'AppsGU',
     'potentialAction': {
       '@type': 'SearchAction',
       'target': {
@@ -41,9 +40,9 @@ export default async function Home() {
               <h1 className="text-3xl font-bold">
                   AppsGU
               </h1>
-              <h2 className="text-lg text-muted-foreground mt-1">Discover the Best Apps</h2>
+              <h2 className="text-lg text-muted-foreground mt-1">Discover Your Next Favorite App</h2>
               <p className="text-sm text-muted-foreground mt-2 max-w-2xl">
-                Free iOS & Android Modded Apps Store - 100+ Premium Mods
+                Browse our curated list of the best modded apps for iOS & Android.
               </p>
           </div>
       </header>
