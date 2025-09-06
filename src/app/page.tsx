@@ -4,7 +4,7 @@ import type { App } from '@/lib/apps';
 import HomePage from '@/components/home-page';
 import type { Metadata } from 'next';
 
-export const revalidate = 3600; // Revalidate every hour
+export const revalidate = false;
 
 export type FullAppInfo = App & { category: string };
 
