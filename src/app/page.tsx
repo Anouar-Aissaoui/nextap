@@ -2,7 +2,6 @@ import { categorizeApps, type CategorizeAppsInput } from '@/ai/flows/categorize-
 import { apps as initialApps } from '@/lib/apps';
 import type { App } from '@/lib/apps';
 import HomePage from '@/components/home-page';
-import SiteLogo from '@/components/site-logo';
 
 export type FullAppInfo = App & { category: string };
 
@@ -34,18 +33,14 @@ export default async function Home() {
 
   return (
     <div className="bg-background min-h-screen">
-      <header className="py-8 md:py-12 bg-background border-b">
-        <div className="container mx-auto text-left">
-          <p className="text-sm font-medium text-primary">Featured</p>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mt-1">
-            Welcome to AppsGU
-          </h1>
-          <p className="text-muted-foreground mt-3 text-lg">
-            Your daily destination for new apps.
-          </p>
-        </div>
+      <header className="sticky top-0 bg-background/95 backdrop-blur-sm z-10 border-b">
+          <div className="container mx-auto px-4 h-14 flex items-center">
+              <h1 className="text-xl font-bold">
+                  Top Charts
+              </h1>
+          </div>
       </header>
-      <main className="container mx-auto px-4 pb-16 pt-12">
+      <main className="container mx-auto px-0 pb-20 pt-2">
         <HomePage apps={categorizedApps} />
       </main>
     </div>

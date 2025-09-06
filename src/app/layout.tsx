@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
+import { BottomNav } from '@/components/bottom-nav';
 
 export const metadata: Metadata = {
   title: 'App Discovery Hub',
@@ -16,7 +17,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className="font-sans antialiased">
-        {children}
+        <div className="relative flex flex-col min-h-screen">
+          <main className="flex-1">{children}</main>
+          <BottomNav />
+        </div>
         <Toaster />
       </body>
     </html>
