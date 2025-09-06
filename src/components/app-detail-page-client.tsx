@@ -59,10 +59,9 @@ export default function AppDetailPageClient({ app }: AppDetailPageClientProps) {
                     <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
                         <Image
                             src={app.img}
-                            alt={`${app.name} icon`}
+                            alt={`${app.name} App Icon`}
                             width={150}
                             height={150}
-                            priority
                             className="rounded-2xl border-4 border-white shadow-md aspect-square object-cover shrink-0"
                             data-ai-hint="app icon"
                         />
