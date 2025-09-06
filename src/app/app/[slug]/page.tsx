@@ -26,7 +26,6 @@ export async function generateMetadata({ params }: AppDetailPageProps): Promise<
 
   const siteUrl = 'https://www.appsg.site';
   const canonicalUrl = `${siteUrl}/app/${app.slug}`;
-  const ogImageUrl = `https://picsum.photos/seed/${app.slug}/1200/630`;
   const title = `${app.name} - ${app.description}`;
   const siteName = "App Discovery Hub";
 
@@ -46,7 +45,7 @@ export async function generateMetadata({ params }: AppDetailPageProps): Promise<
       siteName: siteName,
       images: [
         {
-          url: ogImageUrl,
+          url: `/app/${app.slug}/opengraph-image`,
           width: 1200,
           height: 630,
           alt: `${app.name} feature image`,
@@ -59,7 +58,7 @@ export async function generateMetadata({ params }: AppDetailPageProps): Promise<
       card: 'summary_large_image',
       title: title,
       description: app.description,
-      images: [ogImageUrl],
+      images: [`/app/${app.slug}/opengraph-image`],
     },
   };
 }
