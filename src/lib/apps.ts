@@ -1912,7 +1912,7 @@ How to install (iOS & Android)
 
 Team tips
 - Build balanced teams (damage, support, control) for consistent clears
-- Prioritize core relic upgrades on carries first
+- Prioritize core relic upgrades on your main carry first
 
 Compatibility
 - iOS 12+ and Android 7+ supported`,
