@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -17,7 +18,7 @@ export default function AppCard({ app, index }: { app: FullAppInfo, index: numbe
       className="group block"
     >
         <div className="flex items-center gap-4 px-4 h-20 border-b last:border-b-0">
-            <div className="text-xl font-medium text-muted-foreground w-6 text-center">{index}</div>
+            <div className="text-xl font-medium text-muted-foreground w-8 text-center">{index}</div>
             <Image
                 src={app.img}
                 alt={`${app.name} icon`}

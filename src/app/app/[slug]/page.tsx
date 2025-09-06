@@ -81,30 +81,56 @@ export default async function AppDetailPage({ params }: AppDetailPageProps) {
   const siteUrl = 'https://www.appsg.site';
   const canonicalUrl = `${siteUrl}/app/${app.slug}`;
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
-    'name': app.name,
-    'url': canonicalUrl,
-    'description': app.description,
-    'applicationCategory': app.category,
-    'operatingSystem': 'iOS, Android',
-    'image': app.img,
-    'author': {
-        '@type': 'Organization',
-        'name': app.author,
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      'name': app.name,
+      'url': canonicalUrl,
+      'description': app.description,
+      'applicationCategory': app.category,
+      'operatingSystem': 'iOS, Android',
+      'image': app.img,
+      'author': {
+          '@type': 'Organization',
+          'name': app.author,
+      },
+      'aggregateRating': {
+          '@type': 'AggregateRating',
+          'ratingValue': '4.7',
+          'ratingCount': '521'
+      },
+      'offers': {
+          '@type': 'Offer',
+          'price': '0',
+          'priceCurrency': 'USD'
+      }
     },
-    'aggregateRating': {
-        '@type': 'AggregateRating',
-        'ratingValue': '4.7',
-        'ratingCount': '521'
-    },
-    'offers': {
-        '@type': 'Offer',
-        'price': '0',
-        'priceCurrency': 'USD'
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        {
+          '@type': 'ListItem',
+          'position': 1,
+          'name': 'Home',
+          'item': siteUrl,
+        },
+        {
+          '@type': 'ListItem',
+          'position': 2,
+          'name': 'Apps',
+          'item': `${siteUrl}/app`,
+        },
+        {
+          '@type': 'ListItem',
+          'position': 3,
+          'name': app.name,
+          'item': canonicalUrl,
+        },
+      ],
     }
-  };
+  ];
 
   return (
     <>
@@ -112,7 +138,7 @@ export default async function AppDetailPage({ params }: AppDetailPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <AppDetailPageClient app={app} />
+      <AppDetailPageClient app={app} allApps={apps} />
     </>
   );
 }

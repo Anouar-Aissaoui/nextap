@@ -5,8 +5,8 @@ import type { App } from '@/lib/apps';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Download, Info, Tag, History, FileQuestion } from 'lucide-react';
-import { Card, CardHeader, CardContent } from '@/components/ui/card';
+import { ArrowLeft, Download, Info, Tag, History, FileQuestion, ChevronRight, Sparkles } from 'lucide-react';
+import { Card, CardHeader, CardContent, CardTitle } from '@/components/ui/card';
 import {
   Accordion,
   AccordionContent,
@@ -14,6 +14,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Badge } from '@/components/ui/badge';
+import AppCard from './app-card';
+import type { FullAppInfo } from '@/app/page';
 
 // Extend the Window interface to include call_locker
 declare global {
@@ -35,9 +37,10 @@ const SafeMarkdown = ({ text }: { text: string }) => {
 
 type AppDetailPageClientProps = {
   app: App;
+  allApps: App[];
 };
 
-export default function AppDetailPageClient({ app }: AppDetailPageClientProps) {
+export default function AppDetailPageClient({ app, allApps }: AppDetailPageClientProps) {
 
   const handleDownloadClick = () => {
     if (typeof window.call_locker === 'function') {
@@ -45,15 +48,27 @@ export default function AppDetailPageClient({ app }: AppDetailPageClientProps) {
     }
   };
   
+  const relatedApps = allApps
+    .filter(relatedApp => relatedApp.category === app.category && relatedApp.id !== app.id)
+    .slice(0, 5);
+
   return (
     <div className="bg-accent/50 min-h-screen">
         <div className="container mx-auto py-8 md:py-16">
-            <Button asChild variant="ghost" className="mb-6">
-                <Link href="/">
-                    <ArrowLeft className="mr-2 h-4 w-4" />
-                    Back to All Apps
-                </Link>
-            </Button>
+            <nav className="mb-6 text-sm text-muted-foreground">
+              <ol className="list-none p-0 inline-flex items-center space-x-2">
+                <li>
+                  <Link href="/" className="hover:text-primary">Home</Link>
+                </li>
+                <li><ChevronRight className="h-4 w-4" /></li>
+                <li>
+                  <Link href="/app" className="hover:text-primary">Apps</Link>
+                </li>
+                 <li><ChevronRight className="h-4 w-4" /></li>
+                <li className="text-foreground font-medium">{app.name}</li>
+              </ol>
+            </nav>
+
             <Card className="overflow-hidden shadow-lg mb-8">
                 <CardHeader className="bg-card p-6 md:p-8">
                     <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
@@ -134,6 +149,26 @@ export default function AppDetailPageClient({ app }: AppDetailPageClientProps) {
                     </Card>
                 </div>
             </div>
+
+            {relatedApps.length > 0 && (
+                <div className="mt-16">
+                    <Card>
+                        <CardHeader>
+                            <CardTitle className="flex items-center gap-2">
+                                <Sparkles className="text-primary" />
+                                You Might Also Like
+                            </CardTitle>
+                        </CardHeader>
+                        <CardContent className="p-0">
+                           <div className="flex flex-col">
+                                {relatedApps.map((relatedApp, index) => (
+                                    <AppCard key={relatedApp.id} app={relatedApp as FullAppInfo} index={index + 1} />
+                                ))}
+                            </div>
+                        </CardContent>
+                    </Card>
+                </div>
+            )}
         </div>
     </div>
   );
