@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     template: `%s - App Discovery Hub`,
   },
   description: 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.',
+  keywords: ['modded apps', 'tweaked apps', 'iOS sideload', 'Android mods', 'app installer', 'free apps', 'no jailbreak'],
   openGraph: {
     title: 'iOS & Android Modded Apps – Free Downloads | AppsGU',
     description: 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.',
