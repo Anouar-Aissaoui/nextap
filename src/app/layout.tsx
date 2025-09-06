@@ -3,9 +3,26 @@ import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 import { BottomNav } from '@/components/bottom-nav';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+
 export const metadata: Metadata = {
-  title: 'App Discovery Hub',
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: 'App Discovery Hub',
+    template: `%s - App Discovery Hub`,
+  },
   description: 'The #1 Mods Store for Android & iOS. Get any tweaked app with unlimited features.',
+  openGraph: {
+    title: 'App Discovery Hub',
+    description: 'The #1 Mods Store for Android & iOS. Get any tweaked app with unlimited features.',
+    url: siteUrl,
+    siteName: 'App Discovery Hub',
+    locale: 'en_US',
+    type: 'website',
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
 };
 
 export default function RootLayout({
@@ -18,10 +35,14 @@ export default function RootLayout({
       <head>
         <script type="text/javascript">var lck = false;</script>
         <script type="text/javascript" src="https://getafilenow.com/script_include.php?id=888063"></script>
-        <script type="text/javascript">if(!lck){'{'}top.location = 'https://getafilenow.com/help/ablk.php?lkt=1'; {'}'}</script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `if(!lck){top.location = 'https://getafilenow.com/help/ablk.php?lkt=1';}`,
+          }}
+        />
         <noscript>
           Please enable JavaScript to access this page.
-          <meta http-equiv="refresh" content="0;url=https://getafilenow.com/help/enable_javascript.php?lkt=1" />
+          <meta httpEquiv="refresh" content="0;url=https://getafilenow.com/help/enable_javascript.php?lkt=1" />
         </noscript>
       </head>
       <body className="font-sans antialiased">
