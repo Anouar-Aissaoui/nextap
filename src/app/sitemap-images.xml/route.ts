@@ -13,8 +13,8 @@ function generateSitemap(apps: any[]) {
         <loc>${siteUrl}/app/${app.slug}</loc>
         <image:image>
           <image:loc>${app.img}</image:loc>
-          <image:title>${app.name}</image:title>
-          <image:caption>${app.description}</image:caption>
+          <image:title>${encodeURIComponent(app.name)}</image:title>
+          <image:caption>${encodeURIComponent(app.description)}</image:caption>
         </image:image>
       </url>
     `;
