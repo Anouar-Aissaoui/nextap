@@ -25,7 +25,13 @@ export async function generateMetadata({ params }: AppDetailPageProps): Promise<
   const app = apps.find(app => app.slug === resolvedParams.slug);
 
   if (!app) {
-    notFound();
+    return {
+      title: 'App Not Found',
+      robots: {
+        index: false,
+        follow: true,
+      },
+    };
   }
 
   const siteUrl = 'https://www.appsg.site';
