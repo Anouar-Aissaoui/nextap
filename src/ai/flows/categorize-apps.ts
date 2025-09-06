@@ -38,7 +38,7 @@ const appCategorizationPrompt = ai.definePrompt({
   output: {schema: CategorizeAppsOutputSchema},
   prompt: `You are an expert app classifier. Given a list of apps with their descriptions, determine the most appropriate category for each app.
 
-Valid categories are: Games, Social, Entertainment, Utilities, Productivity, Education, Finance, Health, Shopping, Travel.
+Valid categories are: Games, Social, Entertainment, Utilities, Productivity, Education, Finance, Health & Fitness, Shopping, Travel, Books, Business, Food & Drink, Lifestyle, Medical, Music & Audio, Navigation, News & Magazines, Photo & Video, Sports.
 
 Output a JSON array where each object contains the app name, description, and the determined category.
 
