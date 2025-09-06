@@ -18,7 +18,7 @@ export default function AppCard({ app, index }: { app: FullAppInfo, index: numbe
   };
 
   return (
-    <Link href={`/apps/${app.slug}`} className="group block">
+    <Link href={`/app/${app.slug}`} className="group block">
         <div className="flex items-center gap-4 px-4 py-2.5 border-b last:border-b-0">
             <div className="text-xl font-medium text-muted-foreground w-6 text-center">{index}</div>
             <Image

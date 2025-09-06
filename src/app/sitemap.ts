@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = 'https://www.appsg.site/';
 
   const appUrls = apps.map((app) => ({
-    url: `${siteUrl}/apps/${app.slug}`,
+    url: `${siteUrl}/app/${app.slug}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
