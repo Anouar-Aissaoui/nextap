@@ -1,5 +1,4 @@
-import { categorizeApps, type CategorizeAppsInput } from '@/ai/flows/categorize-apps';
-import { apps as initialApps } from '@/lib/apps';
+import { apps } from '@/lib/apps';
 import type { App } from '@/lib/apps';
 import HomePage from '@/components/home-page';
 
@@ -8,30 +7,11 @@ export const revalidate = 60; // Revalidate every 60 seconds
 export type FullAppInfo = App & { category: string };
 
 export default async function Home() {
-  const appsForAI: CategorizeAppsInput = initialApps.map(app => ({
-    name: app.name,
-    description: app.description,
+  // AI categorization is no longer needed as the static data includes categories.
+  const categorizedApps: FullAppInfo[] = apps.map(app => ({
+    ...app,
+    category: app.category || 'Utilities', // Fallback for safety
   }));
-
-  let categorizedApps: FullAppInfo[] = [];
-
-  try {
-    const categorizationResults = await categorizeApps(appsForAI);
-    
-    categorizedApps = initialApps.map(app => {
-      const result = categorizationResults.find(r => r.name === app.name);
-      return {
-        ...app,
-        category: result?.category || 'Utilities',
-      };
-    });
-  } catch (error) {
-    console.error("AI categorization failed, falling back to default categories.", error);
-    categorizedApps = initialApps.map(app => ({
-      ...app,
-      category: 'Utilities',
-    }));
-  }
 
   const siteUrl = 'https://www.appsg.site/';
 
