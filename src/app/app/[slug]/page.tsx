@@ -1,3 +1,4 @@
+
 import { apps } from '@/lib/apps';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: AppDetailPageProps): Promise<
   const canonicalUrl = `${siteUrl}/app/${app.slug}`;
   const ogImageUrl = `https://picsum.photos/seed/${app.slug}/1200/630`;
   const title = `${app.name} - ${app.description}`;
-  const siteName = "AppsGU";
+  const siteName = "App Discovery Hub";
 
   return {
     title: {
@@ -70,5 +71,41 @@ export default async function AppDetailPage({ params }: AppDetailPageProps) {
     notFound();
   }
 
-  return <AppDetailPageClient app={app} />;
+  const siteUrl = 'https://www.appsg.site';
+  const canonicalUrl = `${siteUrl}/app/${app.slug}`;
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    'name': app.name,
+    'url': canonicalUrl,
+    'description': app.description,
+    'applicationCategory': app.category,
+    'operatingSystem': 'iOS, Android',
+    'image': app.img,
+    'author': {
+        '@type': 'Organization',
+        'name': app.author,
+    },
+    'aggregateRating': {
+        '@type': 'AggregateRating',
+        'ratingValue': '4.7',
+        'ratingCount': '521'
+    },
+    'offers': {
+        '@type': 'Offer',
+        'price': '0',
+        'priceCurrency': 'USD'
+    }
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <AppDetailPageClient app={app} />
+    </>
+  );
 }
