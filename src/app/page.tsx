@@ -31,7 +31,7 @@ export default async function Home() {
     }));
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+  const siteUrl = 'https://www.appsg.site/';
 
   const jsonLd = {
     '@context': 'https://schema.org',

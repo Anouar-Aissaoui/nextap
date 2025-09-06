@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 import { BottomNav } from '@/components/bottom-nav';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+const siteUrl = 'https://www.appsg.site/';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

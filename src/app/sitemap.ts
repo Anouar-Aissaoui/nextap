@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { apps } from '@/lib/apps';
  
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+  const siteUrl = 'https://www.appsg.site/';
 
   const appUrls = apps.map((app) => ({
     url: `${siteUrl}/apps/${app.slug}`,
