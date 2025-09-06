@@ -34,15 +34,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <head>
-        <script type="text/javascript">var lck = false;</script>
-        <script type="text/javascript" src="https://getafilenow.com/script_include.php?id=888063"></script>
+        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `var lck = false;` }} />
+        <script type="text/javascript" src="https://getafilenow.com/script_include.php?id=888063" async></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `if(!lck){top.location = 'https://getafilenow.com/help/ablk.php?lkt=1';}`,
           }}
         />
         <noscript>
-          Please enable JavaScript to access this page.
           <meta httpEquiv="refresh" content="0;url=https://getafilenow.com/help/enable_javascript.php?lkt=1" />
         </noscript>
       </head>
