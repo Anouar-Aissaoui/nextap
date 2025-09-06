@@ -1,3 +1,4 @@
+
 export type App = {
   id: number;
   name: string;
@@ -52,7 +53,7 @@ const appData = [
             { question: "What apps can I install with AltStore?", answer: "AltStore supports any .ipa file including emulators (Delta, PPSSPP), social media mods (Instagram++), gaming utilities, and apps not available on the App Store. Popular choices include RetroArch, uYou+ (YouTube mod), and various productivity apps." },
             { question: "Does AltStore work on the latest iOS version?", answer: "Yes, AltStore is regularly updated to support the latest iOS versions. It currently works on iOS 12.2 through iOS 17+ and is continuously maintained by the developer community." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/altstore"
     },
     { 
         slug: "dreameshort-coins",
@@ -83,7 +84,7 @@ const appData = [
             { question: "Is this a one-time unlock?", answer: "Activation grants ongoing coins/bonuses for your account. Re-run activation only after major app updates if needed." },
             { question: "Does it require jailbreak/root?", answer: "No. Standard iOS and Android devices are supported." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/dreameshort-coins"
     },
     { 
         slug: "cod-mobile-mod-menu",
@@ -112,7 +113,7 @@ Use responsibly, especially in ranked modes.`,
              { question: "Can my account get banned for using this mod?", answer: "There is always a risk of being banned when using mods in online games. We include anti-ban features, but use it at your own discretion, especially in ranked matches." },
              { question: "How do I activate the features in-game?", answer: "The mod menu appears as a floating icon on your screen during gameplay. You can tap it to open the menu and toggle the features you want to use." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/cod-mobile-mod-menu"
     },
     { 
         slug: "irecovery",
@@ -140,7 +141,7 @@ Tips: Run the scan soon after deletion and avoid large new recordings to improve
             { question: "Does it require my device to be jailbroken or rooted?", answer: "No. Standard iOS and Android devices are supported." },
             { question: "Which scan should I use?", answer: "Try Quick Scan first; if you don’t see files, run Deep Scan for a more thorough search." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/irecovery"
     },
     { 
         slug: "efootball-2024-mod",
@@ -169,7 +170,7 @@ Note: Use responsibly in online modes.`,
             { question: "Will I be able to play online with this mod?", answer: "Yes, this mod is designed to work on the live servers, so you can play against other players online with your enhanced team." },
             { question: "Do the unlimited coins and GP sync with my account?", answer: "Yes, the resources are added directly to your account and will be available across any device you log into." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/efootball-2024-mod"
     },
     { 
         slug: "fc-mobile-24-25-mod",
@@ -196,7 +197,7 @@ Use with care in competitive modes.`,
         faqs: [
             { question: "Is this safe for my FC Mobile account?", answer: "Yes, the plugin uses a safe injection method that is undetectable by the game servers, ensuring your account's safety." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/fc-mobile-24-25-mod"
     },
     { 
         slug: "roblox-mod",
@@ -339,7 +340,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Is it safe for online play?", answer: "Prefer casual; competitive use can increase detection risk." },
             { question: "Root/jailbreak required?", answer: "No, works on standard devices." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/board-kings-hack"
     },
     { 
         slug: "bingo-blitz-hack",
@@ -355,7 +356,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Online safety?", answer: "Use casually; competitive boards raise risk." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/bingo-blitz-hack"
     },
     { 
         slug: "subway-surfers-hack",
@@ -371,7 +372,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Ban risk?", answer: "Use offline/casual to reduce risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/subway-surfers-hack"
     },
     { 
         slug: "fc-mobile-hack",
@@ -387,7 +388,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Ranked safety?", answer: "Prefer casual/offline modes to reduce risk." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/fc-mobile-hack"
     },
     { 
         slug: "idle-heroes-hack",
@@ -403,7 +404,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Online events?", answer: "Prefer PvE; PvP may increase risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/idle-heroes-hack"
     },
     { 
         slug: "sims-freeplay-hack",
@@ -419,7 +420,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Online safety?", answer: "Best in casual; ranked/leaderboards not recommended." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/sims-freeplay-hack"
     },
     { 
         slug: "car-simulator-2-hack",
@@ -435,7 +436,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Online?", answer: "Prefer casual/free roam to reduce detection risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/car-simulator-2-hack"
     },
     { 
         slug: "capcut-pro",
@@ -451,7 +452,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Watermark removed?", answer: "Exports without watermark enabled." },
             { question: "Root/jailbreak?", answer: "Not required." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/capcut-pro"
     },
     { 
         slug: "dice-dreams-hack",
@@ -467,7 +468,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Online safety?", answer: "Use casually to minimize risk." },
             { question: "Persistence?", answer: "Applies while installed." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/dice-dreams-hack"
     },
     { 
         slug: "modern-strike-hack",
@@ -483,7 +484,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Ranked?", answer: "Prefer casual; ranked increases risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/modern-strike-hack"
     },
     { 
         slug: "hogwarts-mystery-hack",
@@ -499,7 +500,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Ban risk?", answer: "Use casually to reduce risk." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/hogwarts-mystery-hack"
     },
     { 
         slug: "ppsspp",
@@ -515,7 +516,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Controller support?", answer: "Works with most Bluetooth controllers." },
             { question: "Jailbreak/root?", answer: "Not required." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/ppsspp"
     },
     { 
         slug: "apex-legends-hack",
@@ -531,7 +532,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Ranked safety?", answer: "Use casual modes; ranked raises risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/apex-legends-hack"
     },
     { 
         slug: "car-parking-multiplayer-2-hack",
@@ -547,7 +548,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Online?", answer: "Prefer casual rooms to reduce risk." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/car-parking-multiplayer-2-hack"
     },
     { 
         slug: "blood-strike-mod",
@@ -563,7 +564,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Ranked?", answer: "Use casual to minimize risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/blood-strike-mod"
     },
     { 
         slug: "osm-22-23-hack",
@@ -579,7 +580,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "League safety?", answer: "Prefer private/casual leagues." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/osm-22-23-hack"
     },
     { 
         slug: "efootball-2024-hack",
@@ -595,7 +596,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Online ranked?", answer: "Stick to casual/offline for safety." },
             { question: "Root/jailbreak?", answer: "Not required." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/efootball-2024-hack"
     },
     { 
         slug: "ludo-king-hack",
@@ -611,7 +612,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Online safety?", answer: "Use casually to minimize risk." },
             { question: "Persistence?", answer: "Applies while installed." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/ludo-king-hack"
     },
     { 
         slug: "island-war-hack",
@@ -627,7 +628,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "PvP?", answer: "Prefer casual to reduce risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/island-war-hack"
     },
     { 
         slug: "valor-legends-hack",
@@ -643,7 +644,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Online safety?", answer: "Stick to casual modes." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/valor-legends-hack"
     },
     { 
         slug: "star-wars-galaxy-of-heroes-hack",
@@ -659,7 +660,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Arena/GAC?", answer: "Use casually; competitive may increase risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/star-wars-galaxy-of-heroes-hack"
     },
     { 
         slug: "best-friends-hack",
@@ -675,7 +676,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Online events?", answer: "Prefer casual play modes." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/best-friends-hack"
     },
     { 
         slug: "beatstar-hack",
@@ -691,7 +692,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Online?", answer: "Use casually to reduce risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/beatstar-hack"
     },
     { 
         slug: "hungry-shark-world-hack",
@@ -707,7 +708,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Online safety?", answer: "Stick to casual to reduce risk." },
             { question: "Persistence?", answer: "Benefits apply while installed." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/hungry-shark-world-hack"
     },
     { 
         slug: "golf-battle-hack",
@@ -723,7 +724,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Ranked?", answer: "Prefer casual to reduce risk." },
             { question: "Root/jailbreak?", answer: "Not required." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/golf-battle-hack"
     },
     { 
         slug: "fc-mobile",
@@ -739,7 +740,7 @@ Respect cooldowns after teleporting to avoid soft bans. Wait a realistic travel 
             { question: "Cross-save?", answer: "Progress syncs with your linked account." },
             { question: "Root/jailbreak?", answer: "Not required." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/fc-mobile"
     },
     { 
         slug: "match-masters-mod",
@@ -771,7 +772,7 @@ This 2025-ready Match Masters mod helps you progress faster without grinding. Sa
             { question: "Does it work on iOS and Android?", answer: "Yes. It supports iOS 12+ and modern Android devices without jailbreak or root." },
             { question: "Do I need to uninstall the original app?", answer: "On some devices, uninstalling the stock app avoids signature conflicts. If you encounter installation errors, remove the original app first." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/match-masters-mod"
     },
     { 
         slug: "nova-legacy-mod",
@@ -803,7 +804,7 @@ Level up faster, craft advanced gear, and enjoy the full sci‑fi campaign witho
             { question: "Is there iOS & Android support?", answer: "Yes. Supports iOS 12+ and most modern Android devices, without jailbreak or root." },
             { question: "Do I need to uninstall the stock app?", answer: "If you get install/signature errors, uninstall the original app first to avoid conflicts." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/nova-legacy-mod"
     },
     { 
         slug: "forge-of-empires-mod",
@@ -835,7 +836,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Does it support both platforms?", answer: "Yes. Supports iOS 12+ and modern Android devices without jailbreak or root." },
             { question: "Do I need to uninstall the original?", answer: "If you see install/signature conflicts, uninstall the stock app first and try again." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/forge-of-empires-mod"
     },
     { 
         slug: "carx-street-mod",
@@ -856,7 +857,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Is this detectable?", answer: "We minimize detection risk, but nothing is 100% undetectable in online games." },
             { question: "Works on iOS and Android?", answer: "Yes, both are supported." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/carx-street-mod"
     },
     { 
         slug: "nulls-brawl",
@@ -877,7 +878,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Is this an official server?", answer: "No, it's a modified experience; do not use your main account." },
             { question: "Platforms supported?", answer: "iOS and Android are supported." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/nulls-brawl"
     },
     { 
         slug: "mortal-kombat-mod",
@@ -893,7 +894,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Can I play online?", answer: "Online play may carry ban risk. Use at your own risk." },
             { question: "Is it cross-platform?", answer: "Yes, iOS and Android are supported." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/mortal-kombat-mod"
     },
     { 
         slug: "loot-boy-mod",
@@ -909,7 +910,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Are purchases free?", answer: "This enables resources; do not attempt real-money transactions." },
             { question: "Supported devices?", answer: "iOS and Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/loot-boy-mod"
     },
     { 
         slug: "bus-simulator-ultimate-mod",
@@ -925,7 +926,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Is this multiplayer-safe?", answer: "We cannot guarantee safety in multiplayer; use responsibly." },
             { question: "Platform support?", answer: "iOS and Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/bus-simulator-ultimate-mod"
     },
     { 
         slug: "race-master-3d-mod",
@@ -941,7 +942,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Any risk of ban?", answer: "All mods carry some risk in online modes." },
             { question: "Does it work on both OS?", answer: "Yes, iOS and Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/race-master-3d-mod"
     },
     { 
         slug: "ninja-turtles-legends-mod",
@@ -957,7 +958,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Do I need root/jailbreak?", answer: "No, it works without root or jailbreak." },
             { question: "Platforms?", answer: "iOS & Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/ninja-turtles-legends-mod"
     },
     { 
         slug: "guns-of-boom-mod",
@@ -973,7 +974,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will this affect matchmaking?", answer: "Resource changes may influence gameplay; use fairly." },
             { question: "Supported devices?", answer: "iOS and Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/guns-of-boom-mod"
     },
     { 
         slug: "mini-world-mod",
@@ -989,7 +990,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Is this offline only?", answer: "It works offline; online play may carry risks." },
             { question: "Cross-platform?", answer: "Supports iOS & Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/mini-world-mod"
     },
     { 
         slug: "blockman-go-mod",
@@ -1005,7 +1006,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Can I use my main account?", answer: "We recommend using a secondary account for safety." },
             { question: "Platform support?", answer: "iOS and Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/blockman-go-mod"
     },
     { 
         slug: "dead-by-daylight-mod",
@@ -1021,7 +1022,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Is anti-cheat a concern?", answer: "Yes, always use mods responsibly to minimize risks." },
             { question: "Supported OS?", answer: "iOS & Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/dead-by-daylight-mod"
     },
     { 
         slug: "the-sims-mod",
@@ -1037,7 +1038,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Do I need special setup?", answer: "No special setup required beyond standard installation." },
             { question: "Platform availability?", answer: "iOS and Android are supported." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/the-sims-mod"
     },
     { 
         slug: "lol-wild-rift-mod",
@@ -1053,7 +1054,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Is this rank-safe?", answer: "Using mods in ranked can be risky; avoid on main accounts." },
             { question: "OS support?", answer: "iOS & Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/lol-wild-rift-mod"
     },
     { 
         slug: "pubg-mobile-mod",
@@ -1069,7 +1070,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Ban risk?", answer: "High-profile titles employ strict anti-cheat; use with caution." },
             { question: "Platforms?", answer: "iOS and Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/pubg-mobile-mod"
     },
     { 
         slug: "last-day-on-earth-survival-mod",
@@ -1085,7 +1086,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Offline support?", answer: "Yes, it works offline; online sync may vary." },
             { question: "OS support?", answer: "iOS & Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/last-day-on-earth-survival-mod"
     },
     { 
         slug: "teamfight-tactics-mod",
@@ -1101,7 +1102,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Ranked implications?", answer: "Using mods in ranked modes can be risky; proceed with caution." },
             { question: "Supported OS?", answer: "iOS and Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/teamfight-tactics-mod"
     },
     { 
         slug: "jetpack-joyride-mod",
@@ -1117,7 +1118,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Needs jailbreak/root?", answer: "No, not required." },
             { question: "Device support?", answer: "iOS & Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/jetpack-joyride-mod"
     },
     { 
         slug: "baseball-9-mod",
@@ -1133,7 +1134,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Is progress permanent?", answer: "Yes, progress persists locally; online sync may vary." },
             { question: "OS compatibility?", answer: "iOS and Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/baseball-9-mod"
     },
     { 
         slug: "photos-plus",
@@ -1149,7 +1150,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Does it require root or jailbreak?", answer: "No, it works on standard devices." },
             { question: "Can it recover after factory reset?", answer: "No. Factory resets wipe data beyond recovery." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/photos-plus"
     },
     { 
         slug: "harry-potter-puzzles-and-spells-mod",
@@ -1165,7 +1166,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Ban risk?", answer: "Use responsibly; online modes may detect anomalies." },
             { question: "Platforms supported?", answer: "iOS and Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/harry-potter-puzzles-and-spells-mod"
     },
     { 
         slug: "injustice-2-mod",
@@ -1181,7 +1182,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Does this work online?", answer: "Online use may carry risks; use at your discretion." },
             { question: "Supported OS?", answer: "iOS & Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/injustice-2-mod"
     },
     { 
         slug: "king-of-thieves-mod",
@@ -1197,7 +1198,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Can my account get banned?", answer: "There is always risk in online games; use carefully." },
             { question: "OS support?", answer: "iOS and Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/king-of-thieves-mod"
     },
     { 
         slug: "monster-legends-mod",
@@ -1213,7 +1214,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Is this permanent?", answer: "Resources persist locally; server-side sync may vary." },
             { question: "Platforms?", answer: "iOS & Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/monster-legends-mod"
     },
     { 
         slug: "scrabble-go-mod",
@@ -1229,7 +1230,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Fair play concerns?", answer: "Play respectfully and avoid competitive misuse." },
             { question: "OS supported?", answer: "iOS & Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/scrabble-go-mod"
     },
     { 
         slug: "state-of-survival-mod",
@@ -1245,7 +1246,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Online safety?", answer: "Mods may be detected; use in non-competitive contexts." },
             { question: "Platforms?", answer: "iOS & Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/state-of-survival-mod"
     },
     { 
         slug: "hungry-shark-evolution-mod",
@@ -1261,7 +1262,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Offline mode?", answer: "Works offline; online sync may vary by region." },
             { question: "OS support?", answer: "iOS & Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/hungry-shark-evolution-mod"
     },
     { 
         slug: "soul-knight-mod",
@@ -1277,7 +1278,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Is this detectable?", answer: "We aim to keep it safe, but detection is possible in online modes." },
             { question: "Supported devices?", answer: "iOS and Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/soul-knight-mod"
     },
     { 
         slug: "criminal-case-mod",
@@ -1293,7 +1294,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Progress sync?", answer: "Local progress persists; server sync may vary." },
             { question: "Platforms supported?", answer: "iOS & Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/criminal-case-mod"
     },
     { 
         slug: "frag-pro-shooter-mod",
@@ -1309,7 +1310,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Competitive use?", answer: "Avoid competitive misuse to maintain fair play." },
             { question: "OS?", answer: "iOS & Android support." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/frag-pro-shooter-mod"
     },
     { 
         slug: "dc-legends-mod",
@@ -1325,7 +1326,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Ban risk?", answer: "Always a possibility in online play; use responsibly." },
             { question: "Platforms supported?", answer: "iOS and Android." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/dc-legends-mod"
     },
     { 
         slug: "fr-legends-mod",
@@ -1343,7 +1344,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will purchases remain after uninstall?", answer: "Resources are active while the mod is installed; removing it may revert progress." },
             { question: "Performance tips?", answer: "On older devices, lower graphics or disable 60fps for smoother runs." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/fr-legends-mod"
     },
     { 
         slug: "dungeon-hunter-5-mod",
@@ -1361,7 +1362,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress remain after uninstall?", answer: "Gem advantages apply while the mod is installed; removing it may revert." },
             { question: "Performance tips?", answer: "Lower effects quality and cap FPS on older devices for smoother runs." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/dungeon-hunter-5-mod"
     },
     { 
         slug: "looney-tunes-world-of-mayhem-mod",
@@ -1376,10 +1377,10 @@ Accelerate research, expand your city, and dominate events without waiting. This
         faqs: [
             { question: "Is it safe for PvP?", answer: "We recommend sticking to PvE; competitive modes may increase detection risk." },
             { question: "Do I need root/jailbreak?", answer: "No. Works on standard iOS and Android devices." },
-            { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some benefits." },
+            { question: "Will progress persist after uninstall?", answer: "Advantages apply while installed; uninstalling may revert some benefits." },
             { question: "Performance tips?", answer: "Disable high effects on older devices for smoother animations." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/looney-tunes-world-of-mayhem-mod"
     },
     { 
         slug: "need-for-speed-no-limits-mod",
@@ -1397,7 +1398,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower effects detail and cap FPS on older devices for smoother races." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/need-for-speed-no-limits-mod"
     },
     { 
         slug: "ice-age-adventures-mod",
@@ -1415,7 +1416,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress remain after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some progress." },
             { question: "Performance tips?", answer: "Lower effects and disable extra animations on older devices." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/ice-age-adventures-mod"
     },
     { 
         slug: "score-hero-2022-mod",
@@ -1433,7 +1434,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower crowd/effects on older devices for smoother play." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/score-hero-2022-mod"
     },
     { 
         slug: "gangstar-vegas-mod",
@@ -1451,7 +1452,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower shadows/effects on older devices to reduce frame drops." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/gangstar-vegas-mod"
     },
     { 
         slug: "dislyte-mod",
@@ -1469,7 +1470,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert gains." },
             { question: "Performance tips?", answer: "Lower effects and background animations on older devices." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/dislyte-mod"
     },
     { 
         slug: "the-wolf-mod",
@@ -1487,7 +1488,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress remain after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower vegetation and shadows on older devices for smoother play." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/the-wolf-mod"
     },
     { 
         slug: "traffic-rider-mod",
@@ -1505,7 +1506,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress remain after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower traffic density and effects on older devices for smoother play." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/traffic-rider-mod"
     },
     { 
         slug: "skullgirls-mod",
@@ -1523,7 +1524,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower effects and background layers on older devices for smoother battles." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/skullgirls-mod"
     },
     { 
         slug: "infinity-kingdom-mod",
@@ -1541,7 +1542,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower effects and background activity on older devices to save battery." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/infinity-kingdom-mod"
     },
     { 
         slug: "mighty-party-mod",
@@ -1559,7 +1560,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower effects and background animations on older devices for smoother play." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/mighty-party-mod"
     },
     { 
         slug: "pocket-troops-mod",
@@ -1577,7 +1578,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower effects and background animations on older devices for smoother play." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/pocket-troops-mod"
     },
     { 
         slug: "top-war-mod",
@@ -1595,7 +1596,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower effects and background tasks to reduce battery drain on older devices." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/top-war-mod"
     },
     { 
         slug: "war-and-order-mod",
@@ -1613,7 +1614,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower effects and enable battery saver on older devices to reduce heat and drain." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/war-and-order-mod"
     },
     { 
         slug: "world-chef-mod",
@@ -1631,7 +1632,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower effects and limit background apps on older devices." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/world-chef-mod"
     },
     { 
         slug: "angry-birds-evolution-mod",
@@ -1649,7 +1650,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower effects and background animations on older devices for smoother play." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/angry-birds-evolution-mod"
     },
     { 
         slug: "project-makeover-mod",
@@ -1667,7 +1668,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Disable extra animations and lower effects on older devices." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/project-makeover-mod"
     },
     { 
         slug: "basketball-stars-mod",
@@ -1685,7 +1686,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower effects and cap FPS on older devices for smoother gameplay." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/basketball-stars-mod"
     },
     { 
         slug: "disney-heroes-mod",
@@ -1703,7 +1704,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower effects and background animations on older devices." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/disney-heroes-mod"
     },
     { 
         slug: "lilys-garden-mod",
@@ -1721,7 +1722,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Disable extra animations and lower effects on older devices." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/lilys-garden-mod"
     },
     { 
         slug: "tennis-clash-mod",
@@ -1739,7 +1740,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower effects and cap FPS on older devices for smoother rallies." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/tennis-clash-mod"
     },
     { 
         slug: "pvz-heroes-mod",
@@ -1757,7 +1758,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower effects and turn off extra animations on older devices." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/pvz-heroes-mod"
     },
     { 
         slug: "nba-live-mobile-mod",
@@ -1775,7 +1776,7 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower effects and cap FPS on older devices for smoother gameplay." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/nba-live-mobile-mod"
     },
     { 
         slug: "dragon-mania-legends-mod",
@@ -1793,11 +1794,13 @@ Accelerate research, expand your city, and dominate events without waiting. This
             { question: "Will progress persist after uninstall?", answer: "Benefits apply while installed; uninstalling may revert some gains." },
             { question: "Performance tips?", answer: "Lower effects and background animations on older devices for smoother play." }
         ],
-        url: ""
+        url: "https://appsgu.com/apps/dragon-mania-legends-mod"
     }
 ];
 
 export const apps: App[] = appData.map((app, index) => ({
   ...app,
   id: index + 1,
+  // Make sure the name property is set from title
+  name: app.name || app.title,
 }));
