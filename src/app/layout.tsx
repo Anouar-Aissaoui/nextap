@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: 'iOS & Android Modded Apps – Free Downloads | AppsGU',
-    template: `%s - App Discovery Hub`,
+    template: `%s - AppsGU`,
   },
   description: 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.',
   keywords: ['modded apps', 'tweaked apps', 'iOS sideload', 'Android mods', 'app installer', 'free apps', 'no jailbreak'],
