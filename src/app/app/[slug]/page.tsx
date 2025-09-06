@@ -18,7 +18,11 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: AppDetailPageProps): Promise<Metadata> {
-  const app = apps.find(app => app.slug === params.slug);
+  const resolvedParams = await params;
+  if (!resolvedParams) {
+    notFound();
+  }
+  const app = apps.find(app => app.slug === resolvedParams.slug);
 
   if (!app) {
     notFound();
@@ -64,7 +68,11 @@ export async function generateMetadata({ params }: AppDetailPageProps): Promise<
 }
 
 export default async function AppDetailPage({ params }: AppDetailPageProps) {
-  const app = apps.find(app => app.slug === params.slug);
+  const resolvedParams = await params;
+  if (!resolvedParams) {
+    notFound();
+  }
+  const app = apps.find(app => app.slug === resolvedParams.slug);
 
   if (!app) {
     notFound();
