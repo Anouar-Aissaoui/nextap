@@ -3,6 +3,8 @@ import { apps as initialApps } from '@/lib/apps';
 import type { App } from '@/lib/apps';
 import HomePage from '@/components/home-page';
 
+export const revalidate = 60; // Revalidate every 60 seconds
+
 export type FullAppInfo = App & { category: string };
 
 export default async function Home() {

@@ -66,6 +66,7 @@ export default function AppDetailPageClient({ app }: AppDetailPageClientProps) {
                             alt={`${app.name} icon`}
                             width={150}
                             height={150}
+                            priority
                             className="rounded-2xl border-4 border-white shadow-md aspect-square object-cover"
                             data-ai-hint="app icon"
                         />
@@ -142,4 +143,3 @@ export default function AppDetailPageClient({ app }: AppDetailPageClientProps) {
     </div>
   );
 }
-
