@@ -34,16 +34,14 @@ export default async function Home() {
 
   return (
     <div className="bg-background min-h-screen">
-      <header className="py-8 bg-accent/50">
-        <div className="container mx-auto text-center flex flex-col items-center">
-          <div className="flex items-center gap-3">
-            <SiteLogo className="h-10 w-10 text-primary" />
-            <h1 className="text-4xl md:text-5xl font-bold font-headline text-foreground">
-              AppsGU
-            </h1>
-          </div>
-          <p className="text-muted-foreground mt-2 text-sm md:text-base">
-            #1 Free Mods Store for iOS &amp; Android
+      <header className="py-8 md:py-12 bg-background border-b">
+        <div className="container mx-auto text-left">
+          <p className="text-sm font-medium text-primary">Featured</p>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mt-1">
+            Welcome to AppsGU
+          </h1>
+          <p className="text-muted-foreground mt-3 text-lg">
+            Your daily destination for new apps.
           </p>
         </div>
       </header>

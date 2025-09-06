@@ -40,15 +40,15 @@ export default function HomePage({ apps }: { apps: FullAppInfo[] }) {
           <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
           <Input
             type="search"
-            placeholder="Search apps by name or description..."
-            className="pl-12 h-12 text-base"
+            placeholder="Search for apps..."
+            className="pl-12 h-12 text-base rounded-full bg-secondary border-transparent focus:bg-white focus:border-input"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
         <div className="md:hidden">
           <Select value={selectedCategory} onValueChange={setSelectedCategory}>
-            <SelectTrigger className="w-full h-12 text-base">
+            <SelectTrigger className="w-full h-12 text-base rounded-full bg-secondary border-transparent">
               <SelectValue placeholder="Select a category" />
             </SelectTrigger>
             <SelectContent>
@@ -61,13 +61,12 @@ export default function HomePage({ apps }: { apps: FullAppInfo[] }) {
       </div>
       
       <div className="hidden md:flex flex-wrap items-center gap-2">
-        <span className="text-sm font-medium mr-2">Filter by category:</span>
         {categories.map(category => (
           <Button
             key={category}
-            variant={selectedCategory === category ? 'default' : 'outline'}
+            variant={selectedCategory === category ? 'default' : 'ghost'}
             onClick={() => setSelectedCategory(category)}
-            className="rounded-full"
+            className="rounded-full px-5 text-base"
           >
             {category}
           </Button>
@@ -75,7 +74,7 @@ export default function HomePage({ apps }: { apps: FullAppInfo[] }) {
       </div>
 
       {filteredApps.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 animate-in fade-in-50">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-6 gap-y-8 animate-in fade-in-50">
           {filteredApps.map((app, index) => (
             <AppCard key={app.id} app={app} />
           ))}

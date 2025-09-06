@@ -1,29 +1,23 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import type { FullAppInfo } from '@/app/page';
-import { Badge } from '@/components/ui/badge';
 
 export default function AppCard({ app }: { app: FullAppInfo }) {
   return (
     <Link href={`/apps/${app.slug}`} className="group block h-full">
-      <Card className="h-full overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1 border-2 border-transparent group-hover:border-primary">
-        <CardHeader className="flex flex-row items-center gap-4 p-4">
-          <Image
-            src={app.img}
-            alt={`${app.name} icon`}
-            width={64}
-            height={64}
-            className="rounded-lg border aspect-square object-cover"
-            data-ai-hint="app icon"
-          />
-          <div className="flex-1 space-y-1">
-            <CardTitle className="text-lg leading-tight line-clamp-2">{app.name}</CardTitle>
-             <Badge variant="secondary" className="font-normal">{app.category}</Badge>
-          </div>
-        </CardHeader>
-        <CardContent className="p-4 pt-0">
-          <CardDescription className="line-clamp-2 text-sm">{app.description}</CardDescription>
+      <Card className="h-full overflow-hidden transition-shadow duration-300 hover:shadow-lg bg-transparent border-0 shadow-none">
+        <Image
+          src={app.img}
+          alt={`${app.name} icon`}
+          width={200}
+          height={200}
+          className="rounded-2xl border aspect-square object-cover w-full transition-transform duration-300 group-hover:scale-105"
+          data-ai-hint="app icon"
+        />
+        <CardContent className="p-0 pt-3">
+            <h3 className="font-semibold text-base leading-tight line-clamp-1 text-foreground">{app.name}</h3>
+            <p className="text-sm text-muted-foreground line-clamp-1">{app.category}</p>
         </CardContent>
       </Card>
     </Link>
