@@ -56,17 +56,17 @@ export default function AppDetailPageClient({ app }: AppDetailPageClientProps) {
             </Button>
             <Card className="overflow-hidden shadow-lg mb-8">
                 <CardHeader className="bg-card p-6 md:p-8">
-                    <div className="grid md:grid-cols-[150px_1fr] gap-6 md:gap-8 items-start">
+                    <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
                         <Image
                             src={app.img}
                             alt={`${app.name} icon`}
                             width={150}
                             height={150}
                             priority
-                            className="rounded-2xl border-4 border-white shadow-md aspect-square object-cover"
+                            className="rounded-2xl border-4 border-white shadow-md aspect-square object-cover shrink-0"
                             data-ai-hint="app icon"
                         />
-                        <div className="flex flex-col h-full">
+                        <div className="flex flex-col h-full flex-grow">
                             <h1 className="text-3xl lg:text-5xl font-bold font-headline mb-1">{app.name}</h1>
                             <p className="text-lg text-muted-foreground mb-4">By {app.author}</p>
                             <p className="text-base max-w-prose text-foreground/80">{app.description}</p>

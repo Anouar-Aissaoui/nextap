@@ -9,17 +9,14 @@ import type { FullAppInfo } from '@/app/page';
 export default function AppCard({ app, index }: { app: FullAppInfo, index: number }) {
   const hasUrl = !!app.url;
 
-  const handleGetClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    e.stopPropagation();
-    if (app.url) {
-      window.open(app.url, '_blank', 'noopener,noreferrer');
-    }
-  };
-
   return (
-    <Link href={`/app/${app.slug}`} className="group block">
-        <div className="flex items-center gap-4 px-4 py-2.5 border-b last:border-b-0">
+    <Link 
+      href={hasUrl ? app.url : `/app/${app.slug}`} 
+      target={hasUrl ? '_blank' : '_self'}
+      rel={hasUrl ? 'noopener noreferrer' : ''}
+      className="group block"
+    >
+        <div className="flex items-center gap-4 px-4 h-20 border-b last:border-b-0">
             <div className="text-xl font-medium text-muted-foreground w-6 text-center">{index}</div>
             <Image
                 src={app.img}
@@ -35,18 +32,15 @@ export default function AppCard({ app, index }: { app: FullAppInfo, index: numbe
             </div>
             <div className="ml-auto">
               {hasUrl ? (
-                <Button 
-                  variant="ghost" 
-                  size="sm" 
-                  className="rounded-full font-bold text-primary bg-primary/10 hover:bg-primary/20"
-                  onClick={handleGetClick}
+                <div 
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium h-9 px-3 bg-primary/10 text-primary hover:bg-primary/20"
                 >
                   Get
-                </Button>
+                </div>
               ) : (
-                <Button variant="ghost" size="icon" className="rounded-full text-primary" disabled>
-                  <DownloadCloud className="h-6 w-6" />
-                </Button>
+                <div className="h-10 w-10 inline-flex items-center justify-center text-primary">
+                    <DownloadCloud className="h-6 w-6" />
+                </div>
               )}
             </div>
         </div>
