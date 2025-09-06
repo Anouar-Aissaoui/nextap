@@ -1,7 +1,6 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -29,6 +28,26 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       }
     ],
+  },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.appsg.site',
+          },
+        ],
+        destination: 'https://appsg.site/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:path+/',
+        destination: '/:path+',
+        permanent: true,
+      },
+    ];
   },
 };
 
