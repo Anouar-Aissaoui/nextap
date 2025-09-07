@@ -7,13 +7,14 @@ import AppCard from '@/components/app-card';
 import type { FullAppInfo } from '@/app/app/page';
 import type { App } from '@/lib/apps';
 import { SearchIcon, X } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 
 export default function SearchPage({ apps }: { apps: App[] }) {
   const [searchQuery, setSearchQuery] = useState('');
 
   const filteredApps = useMemo(() => {
     if (!searchQuery) {
-      return apps;
+      return []; // Return empty array if no query
     }
     return apps.filter(
       (app) =>
@@ -44,6 +45,7 @@ export default function SearchPage({ apps }: { apps: App[] }) {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="pl-10 h-12 text-lg"
+          autoFocus
         />
         {searchQuery && (
             <button 
@@ -56,19 +58,21 @@ export default function SearchPage({ apps }: { apps: App[] }) {
       </div>
 
       <main>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {categorizedApps.length > 0 ? (
+        {searchQuery && (
+          <Card>
+            <CardContent className="p-0">
+              {categorizedApps.length > 0 ? (
                 categorizedApps.map((app, index) => (
-                    <div key={app.id} className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                        <AppCard app={app} index={index + 1} />
-                    </div>
+                  <AppCard key={app.id} app={app} index={index + 1} />
                 ))
-            ) : (
-                <div className="md:col-span-2 lg:col-span-3 text-center py-16">
-                    <p className="text-muted-foreground text-lg">No apps found for your search.</p>
+              ) : (
+                <div className="text-center py-16">
+                  <p className="text-muted-foreground text-lg">No apps found for your search.</p>
                 </div>
-            )}
-        </div>
+              )}
+            </CardContent>
+          </Card>
+        )}
       </main>
     </div>
   );

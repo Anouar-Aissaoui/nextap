@@ -33,17 +33,9 @@ export default function AppCard({ app, index }: { app: FullAppInfo, index: numbe
                 <p className="text-sm text-muted-foreground truncate">{app.category}</p>
             </div>
             <div className="ml-auto">
-              {hasUrl ? (
-                <div 
-                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium h-9 px-3 bg-primary/10 text-primary hover:bg-primary/20"
-                >
-                  Get
-                </div>
-              ) : (
-                <div className="h-10 w-10 inline-flex items-center justify-center text-primary">
-                    <DownloadCloud className="h-6 w-6" />
-                </div>
-              )}
+              <div className="h-10 w-10 inline-flex items-center justify-center text-primary">
+                  <DownloadCloud className="h-6 w-6" />
+              </div>
             </div>
         </div>
     </Link>
