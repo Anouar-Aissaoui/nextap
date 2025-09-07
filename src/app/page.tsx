@@ -66,20 +66,20 @@ export default async function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="sticky top-0 bg-background/95 backdrop-blur-sm z-10 border-b h-48 flex flex-col justify-center">
-        <header className="container mx-auto px-4">
-            <h1 className="text-3xl font-bold">
+      <div className="container mx-auto px-4 py-8">
+        <header className="text-center mb-8">
+            <h1 className="text-4xl font-bold">
                 AppsGU
             </h1>
-            <h2 className="text-lg text-muted-foreground mt-1">Your Source for Modded iOS & Android Apps</h2>
-            <p className="text-sm text-muted-foreground mt-2 max-w-2xl">
+            <h2 className="text-xl text-muted-foreground mt-2">Your Source for Modded iOS & Android Apps</h2>
+            <p className="text-md text-muted-foreground mt-4 max-w-2xl mx-auto">
               Browse our curated list of the best modded apps for iOS & Android.
             </p>
         </header>
+        <main>
+          <HomePage apps={categorizedApps} />
+        </main>
       </div>
-      <main className="container mx-auto px-0 pb-20 pt-2">
-        <HomePage apps={categorizedApps} />
-      </main>
     </div>
   );
 }

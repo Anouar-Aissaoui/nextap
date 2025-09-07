@@ -1,11 +1,14 @@
 
 import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
-import { BottomNav } from '@/components/bottom-nav';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Footer } from '@/components/footer';
+import { Header } from '@/components/header';
+
+const inter = Inter({ subsets: ['latin'] })
 
 const siteUrl = 'https://www.appsg.site/';
 
@@ -48,12 +51,12 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://i.imgur.com" />
       </head>
-      <body className="font-sans antialiased">
+      <body className={inter.className}>
         <div className="relative flex flex-col min-h-screen">
-          <main className="flex-1 pb-24">{children}</main>
+          <Header />
+          <main className="flex-1">{children}</main>
           <Footer />
         </div>
-        <BottomNav />
         <Toaster />
         <script type="text/javascript">var lck = false;</script>
         <script type="text/javascript" src="https://getafilenow.com/script_include.php?id=888063"></script>
