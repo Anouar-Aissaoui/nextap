@@ -80,6 +80,7 @@ export default function AppDetailPageClient({ app, allApps }: AppDetailPageClien
                             className="rounded-2xl border-4 border-white shadow-md aspect-square object-cover shrink-0"
                             data-ai-hint="app icon"
                             priority
+                            fetchPriority="high"
                         />
                         <div className="flex flex-col h-full flex-grow">
                             <h1 className="text-3xl lg:text-5xl font-bold font-headline mb-1">{app.name}</h1>

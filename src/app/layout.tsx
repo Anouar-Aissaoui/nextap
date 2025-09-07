@@ -44,6 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://i.imgur.com" />
       </head>
       <body className="font-sans antialiased">
         <div className="relative flex flex-col min-h-screen">
