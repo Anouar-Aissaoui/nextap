@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/accordion"
 import { Badge } from '@/components/ui/badge';
 import AppCard from './app-card';
-import type { FullAppInfo } from '@/app/page';
+import type { FullAppInfo } from '@/app/app/page';
 
 // Extend the Window interface to include call_locker
 declare global {
