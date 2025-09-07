@@ -3,6 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 import { BottomNav } from '@/components/bottom-nav';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const siteUrl = 'https://www.appsg.site/';
 
@@ -55,6 +56,7 @@ export default function RootLayout({
         <script type="text/javascript">if(!lck){'{'}top.location = 'https://getafilenow.com/help/ablk.php?lkt=1'; {'}'}</script>
         <noscript><meta http-equiv="refresh" content="0;url=https://getafilenow.com/help/enable_javascript.php?lkt=1" /></noscript>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
