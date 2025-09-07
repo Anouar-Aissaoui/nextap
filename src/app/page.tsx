@@ -4,7 +4,7 @@ import type { App } from '@/lib/apps';
 import HomePage from '@/components/home-page';
 import type { Metadata } from 'next';
 
-export const revalidate = false;
+export const revalidate = 3600;
 
 export type FullAppInfo = App & { category: string };
 
