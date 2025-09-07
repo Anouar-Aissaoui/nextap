@@ -3,14 +3,12 @@
 
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
-import { Compass, Home, Package, Search } from "lucide-react";
+import { Package, Search } from "lucide-react";
 import SiteLogo from "./site-logo";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-    { href: "/games", icon: Compass, label: "Games" },
     { href: "/app", icon: Package, label: "Apps" },
-    { href: "/arcade", icon: Home, label: "Arcade" },
     { href: "/search", icon: Search, label: "Search" },
 ];
 
@@ -33,7 +31,7 @@ export function Header() {
                             href={item.href}
                             className={cn(
                                 "transition-colors hover:text-foreground/80",
-                                pathname === item.href ? "text-foreground" : "text-foreground/60"
+                                pathname.startsWith(item.href) ? "text-foreground" : "text-foreground/60"
                             )}
                         >
                             {item.label}
