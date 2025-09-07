@@ -1,11 +1,12 @@
 
 'use client';
 
+import * as React from 'react';
 import type { App } from '@/lib/apps';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Download, Info, Tag, History, FileQuestion, ChevronRight, Sparkles } from 'lucide-react';
+import { ArrowLeft, Download, Info, Tag, History, FileQuestion, ChevronRight, Sparkles, Loader2 } from 'lucide-react';
 import { Card, CardHeader, CardContent, CardTitle } from '@/components/ui/card';
 import {
   Accordion,
@@ -41,11 +42,14 @@ type AppDetailPageClientProps = {
 };
 
 export default function AppDetailPageClient({ app, allApps }: AppDetailPageClientProps) {
+  const [isPending, startTransition] = React.useTransition();
 
   const handleDownloadClick = () => {
-    if (typeof window.call_locker === 'function') {
-      window.call_locker();
-    }
+    startTransition(() => {
+      if (typeof window.call_locker === 'function') {
+        window.call_locker();
+      }
+    });
   };
   
   const relatedApps = allApps
@@ -87,9 +91,13 @@ export default function AppDetailPageClient({ app, allApps }: AppDetailPageClien
                             <p className="text-lg text-muted-foreground mb-4">By {app.author}</p>
                             <p className="text-base max-w-prose text-foreground/80">{app.description}</p>
                             <div className="mt-auto pt-6">
-                                <Button size="lg" className="w-full sm:w-auto" onClick={handleDownloadClick}>
-                                    <Download className="mr-2 h-5 w-5" />
-                                    Download Now
+                                <Button size="lg" className="w-full sm:w-auto" onClick={handleDownloadClick} disabled={isPending}>
+                                    {isPending ? (
+                                      <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                                    ) : (
+                                      <Download className="mr-2 h-5 w-5" />
+                                    )}
+                                    {isPending ? 'Processing...' : 'Download Now'}
                                 </Button>
                             </div>
                         </div>
