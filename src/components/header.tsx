@@ -3,12 +3,11 @@
 
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
-import { Compass, Home, Package, Search, Sparkles } from "lucide-react";
+import { Compass, Home, Package, Search } from "lucide-react";
 import SiteLogo from "./site-logo";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-    { href: "/today", icon: Sparkles, label: "Today" },
     { href: "/games", icon: Compass, label: "Games" },
     { href: "/app", icon: Package, label: "Apps" },
     { href: "/arcade", icon: Home, label: "Arcade" },
