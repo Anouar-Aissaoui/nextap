@@ -14,7 +14,7 @@ export function BottomNav() {
             <Compass className="h-6 w-6" />
             <span className="text-xs font-medium">Games</span>
           </Link>
-          <Link href="/" className="flex flex-col items-center justify-center text-primary font-semibold">
+          <Link href="/app" className="flex flex-col items-center justify-center text-primary font-semibold">
             <Package className="h-6 w-6" />
             <span className="text-xs">Apps</span>
           </Link>
