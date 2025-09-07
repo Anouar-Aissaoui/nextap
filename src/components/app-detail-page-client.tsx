@@ -82,7 +82,7 @@ export default function AppDetailPageClient({ app, allApps }: AppDetailPageClien
                             width={150}
                             height={150}
                             className="rounded-2xl border-4 border-white shadow-md aspect-square object-cover shrink-0"
-                            data-ai-hint="app icon"
+                            data-ai-hint={app.name}
                             priority
                             fetchPriority="high"
                         />

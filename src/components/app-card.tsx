@@ -25,7 +25,7 @@ export default function AppCard({ app, index }: { app: FullAppInfo, index: numbe
                 width={64}
                 height={64}
                 className="rounded-2xl border aspect-square object-cover"
-                data-ai-hint="app icon"
+                data-ai-hint={app.name}
             />
             <div className="flex-1 min-w-0">
                 <h3 className="font-semibold text-base leading-tight truncate text-foreground">{app.name}</h3>
