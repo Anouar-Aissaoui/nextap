@@ -4,6 +4,8 @@ import type { App } from '@/lib/apps';
 import HomePage from '@/components/home-page';
 import type { Metadata } from 'next';
 
+export const revalidate = 3600; // Revalidate every hour
+
 export type FullAppInfo = App & { category: string };
 
 const siteUrl = 'https://www.appsg.site/';

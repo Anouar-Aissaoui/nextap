@@ -11,6 +11,12 @@ type AppDetailPageProps = {
   };
 };
 
+export async function generateStaticParams() {
+  return apps.map((app) => ({
+    slug: app.slug,
+  }));
+}
+
 export async function generateMetadata({ params }: AppDetailPageProps): Promise<Metadata> {
   const resolvedParams = await params;
   if (!resolvedParams) {
