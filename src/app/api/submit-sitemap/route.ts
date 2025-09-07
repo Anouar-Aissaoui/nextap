@@ -2,21 +2,29 @@
 import { google } from 'googleapis';
 import { NextRequest, NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic'; // Ensures the route is always dynamic
+
 export async function POST(req: NextRequest) {
   try {
-    if (!process.env.GOOGLE_PRIVATE_KEY || !process.env.GOOGLE_CLIENT_EMAIL) {
+    const privateKey = process.env.GOOGLE_PRIVATE_KEY;
+    const clientEmail = process.env.GOOGLE_CLIENT_EMAIL;
+    const siteUrlGsc = process.env.GSC_SITE_URL;
+    const siteUrlApp = process.env.SITE_URL;
+    
+    if (!privateKey || !clientEmail) {
       throw new Error('Google credentials are not set in environment variables.');
     }
-    if (!process.env.GSC_SITE_URL) {
-      throw new Error('Google Search Console site URL is not set.');
+    if (!siteUrlGsc) {
+      throw new Error('Google Search Console site URL (GSC_SITE_URL) is not set.');
     }
-
-    const privateKey = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n');
+    if (!siteUrlApp) {
+        throw new Error('Application site URL (SITE_URL) is not set.');
+    }
 
     const auth = new google.auth.GoogleAuth({
       credentials: {
-        client_email: process.env.GOOGLE_CLIENT_EMAIL,
-        private_key: privateKey,
+        client_email: clientEmail,
+        private_key: privateKey.replace(/\\n/g, '\n'), // Important for Vercel env vars
       },
       scopes: ['https://www.googleapis.com/auth/webmasters'],
     });
@@ -26,13 +34,12 @@ export async function POST(req: NextRequest) {
       auth,
     });
 
-    const sitemapUrl = `${process.env.SITE_URL}/sitemap.xml`;
-    const siteUrl = process.env.GSC_SITE_URL;
+    const sitemapUrl = `${siteUrlApp}/sitemap.xml`;
 
-    console.log(`Submitting sitemap: ${sitemapUrl} for site: ${siteUrl}`);
+    console.log(`Submitting sitemap: ${sitemapUrl} for site: ${siteUrlGsc}`);
 
     const res = await searchconsole.sitemaps.submit({
-      siteUrl: siteUrl,
+      siteUrl: siteUrlGsc,
       feedpath: sitemapUrl,
     });
 
@@ -45,6 +52,7 @@ export async function POST(req: NextRequest) {
     }
   } catch (error: any) {
     console.error('An error occurred:', error.message);
-    return NextResponse.json({ error: 'An internal error occurred', details: error.message }, { status: 500 });
+    const errorMessage = error.response?.data?.error?.message || error.message;
+    return NextResponse.json({ error: 'An internal error occurred', details: errorMessage }, { status: 500 });
   }
 }

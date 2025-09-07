@@ -41,7 +41,7 @@ To enable this feature, you need to create a Google Cloud Service Account and gr
 2.  Add the following variables:
 
     *   `GOOGLE_CLIENT_EMAIL`: The `client_email` from your downloaded JSON file.
-    *   `GOOGLE_PRIVATE_KEY`: The `private_key` from your JSON file. Copy the entire string, including the `-----BEGIN PRIVATE KEY-----` and `-----END PRIVATE KEY-----` lines.
+    *   `GOOGLE_PRIVATE_KEY`: The `private_key` from your JSON file. Copy the entire string, including the `-----BEGIN PRIVATE KEY-----` and `-----END PRIVATE KEY-----` lines. Make sure to replace `\n` with actual newlines if you're copying from a text editor.
     *   `GSC_SITE_URL`: The full URL of your property as it appears in Google Search Console (e.g., `https://www.appsg.site`).
     *   `SITE_URL`: The canonical URL of your site (e.g., `https://www.appsg.site`).
 
