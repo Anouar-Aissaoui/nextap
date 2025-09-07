@@ -9,13 +9,13 @@ export const revalidate = 3600; // Revalidate every hour
 
 export type FullAppInfo = App & { category: string };
 
-const siteUrl = 'https://www.appsg.site/';
+const siteUrl = 'https://www.appsg.site';
 
 export const metadata: Metadata = {
   title: 'AppsGU: Top Modded Apps for iOS & Android (Free Downloads)',
   description: 'Discover and download the best modded and tweaked apps for iOS and Android. Safe, updated, and free from AppsGU, your #1 source for enhanced mobile apps.',
   alternates: {
-    canonical: siteUrl,
+    canonical: `${siteUrl}/app`,
   },
 };
 
@@ -31,14 +31,14 @@ export default async function Home() {
     '@type': 'ItemList',
     'name': 'AppsGU - Curated Mobile Apps',
     'description': 'A curated list of the best modded and tweaked apps for iOS and Android devices.',
-    'url': siteUrl,
+    'url': `${siteUrl}/app`,
     'itemListElement': categorizedApps.map((app, index) => ({
       '@type': 'ListItem',
       'position': index + 1,
       'item': {
         '@type': 'SoftwareApplication',
         'name': app.name,
-        'url': `${siteUrl}app/${app.slug}`,
+        'url': `${siteUrl}/app/${app.slug}`,
         'description': app.description,
         'applicationCategory': app.category,
         'operatingSystem': 'iOS, Android',
