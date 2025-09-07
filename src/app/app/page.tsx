@@ -62,7 +62,7 @@ export default async function Home() {
   };
 
   return (
-    <div className="bg-background min-h-screen">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -85,6 +85,6 @@ export default async function Home() {
           </Card>
         </main>
       </div>
-    </div>
+    </>
   );
 }

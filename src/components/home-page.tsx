@@ -1,5 +1,6 @@
+
 'use client';
-import type { FullAppInfo } from '@/app/page';
+import type { FullAppInfo } from '@/app/app/page';
 import AppCard from './app-card';
 
 export default function HomePage({ apps }: { apps: FullAppInfo[] }) {

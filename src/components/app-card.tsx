@@ -9,10 +9,11 @@ import type { FullAppInfo } from '@/app/app/page';
 
 export default function AppCard({ app, index }: { app: FullAppInfo, index: number }) {
   const hasUrl = !!app.url;
+  const href = hasUrl ? app.url : `/app/${app.slug}`;
 
   return (
     <Link 
-      href={hasUrl ? app.url : `/app/${app.slug}`} 
+      href={href}
       target={hasUrl ? '_blank' : '_self'}
       rel={hasUrl ? 'noopener noreferrer' : ''}
       className="group block"
