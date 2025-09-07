@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
@@ -51,8 +52,8 @@ export default function RootLayout({
         <div className="relative flex flex-col min-h-screen">
           <main className="flex-1 pb-24">{children}</main>
           <Footer />
-          <BottomNav />
         </div>
+        <BottomNav />
         <Toaster />
         <script type="text/javascript">var lck = false;</script>
         <script type="text/javascript" src="https://getafilenow.com/script_include.php?id=888063"></script>
