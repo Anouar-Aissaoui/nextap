@@ -1,9 +1,14 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy',
-  description: 'Privacy Policy for AppsGU.',
+  title: 'Privacy Policy | AppsGU',
+  description: 'Review the Privacy Policy for AppsGU. We are committed to protecting your privacy and handling your data responsibly. Learn about the information we collect and how it is used.',
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function PrivacyPolicyPage() {
@@ -11,7 +16,9 @@ export default function PrivacyPolicyPage() {
     <div className="container mx-auto py-12 md:py-20 px-4">
       <Card>
         <CardHeader>
-          <CardTitle className="text-3xl">Privacy Policy</CardTitle>
+          <h1 className="text-3xl font-bold">
+            <CardTitle>Privacy Policy</CardTitle>
+          </h1>
         </CardHeader>
         <CardContent className="prose dark:prose-invert max-w-none">
           <p>
