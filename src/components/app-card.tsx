@@ -24,7 +24,7 @@ export default function AppCard({ app, index }: { app: FullAppInfo, index: numbe
                 alt={`${app.name} icon`}
                 width={64}
                 height={64}
-                className="rounded-2xl border aspect-square object-cover"
+                className="rounded-2xl aspect-square object-cover"
                 data-ai-hint={app.name}
             />
             <div className="flex-1 min-w-0">

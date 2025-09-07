@@ -3,6 +3,7 @@ import { apps } from '@/lib/apps';
 import type { App } from '@/lib/apps';
 import HomePage from '@/components/home-page';
 import type { Metadata } from 'next';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export const revalidate = 3600; // Revalidate every hour
 
@@ -77,7 +78,14 @@ export default async function Home() {
             </p>
         </header>
         <main>
-          <HomePage apps={categorizedApps} />
+          <Card>
+            <CardHeader>
+              <CardTitle>All Apps</CardTitle>
+            </CardHeader>
+            <CardContent className="p-0">
+              <HomePage apps={categorizedApps} />
+            </CardContent>
+          </Card>
         </main>
       </div>
     </div>
