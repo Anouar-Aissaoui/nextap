@@ -39,6 +39,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
+  icons: {
+    apple: '/og-image.png',
+  }
 };
 
 export default function RootLayout({
