@@ -4,6 +4,7 @@ import type {NextConfig} from 'next';
 const enableUtmCleanup = process.env.STRIP_UTM === '1';
 
 const nextConfig: NextConfig = {
+  poweredByHeader: false,
   typescript: {
     ignoreBuildErrors: true,
   },
