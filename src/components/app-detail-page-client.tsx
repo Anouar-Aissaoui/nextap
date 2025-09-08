@@ -6,7 +6,7 @@ import type { App } from '@/lib/apps';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Download, Info, Tag, History, FileQuestion, ChevronRight, Sparkles, Loader2 } from 'lucide-react';
+import { ArrowLeft, Download, Info, Tag, History, FileQuestion, ChevronRight, Sparkles, Loader2, Twitter, Facebook, Linkedin, Copy, Share2 } from 'lucide-react';
 import { Card, CardHeader, CardContent, CardTitle } from '@/components/ui/card';
 import {
   Accordion,
@@ -43,6 +43,7 @@ type AppDetailPageClientProps = {
 
 export default function AppDetailPageClient({ app, allApps }: AppDetailPageClientProps) {
   const [isPending, startTransition] = React.useTransition();
+  const [isCopied, setIsCopied] = React.useState(false);
 
   const handleDownloadClick = () => {
     startTransition(() => {
@@ -55,6 +56,16 @@ export default function AppDetailPageClient({ app, allApps }: AppDetailPageClien
   const relatedApps = allApps
     .filter(relatedApp => relatedApp.category === app.category && relatedApp.id !== app.id)
     .slice(0, 5);
+
+  const pageUrl = typeof window !== 'undefined' ? window.location.href : '';
+  const shareText = `Check out ${app.name} on AppsGU!`;
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(pageUrl).then(() => {
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2000); // Reset after 2 seconds
+    });
+  };
 
   return (
     <div className="bg-accent/50 min-h-screen">
@@ -155,6 +166,33 @@ export default function AppDetailPageClient({ app, allApps }: AppDetailPageClien
                                 <span className="text-muted-foreground flex items-center gap-2">Size</span>
                                 <span className="font-medium">{app.size}</span>
                             </div>
+                        </CardContent>
+                    </Card>
+
+                    <Card>
+                        <CardHeader>
+                            <h2 className="text-2xl font-bold flex items-center gap-2"><Share2 /> Share this App</h2>
+                        </CardHeader>
+                        <CardContent className="flex flex-wrap gap-2">
+                             <Button variant="outline" size="icon" asChild>
+                                <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(shareText)}`} target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter">
+                                    <Twitter className="h-5 w-5" />
+                                </a>
+                            </Button>
+                            <Button variant="outline" size="icon" asChild>
+                                <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`} target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">
+                                    <Facebook className="h-5 w-5" />
+                                </a>
+                            </Button>
+                            <Button variant="outline" size="icon" asChild>
+                                <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(pageUrl)}&title=${encodeURIComponent(app.name)}`} target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+                                    <Linkedin className="h-5 w-5" />
+                                </a>
+                            </Button>
+                            <Button variant="outline" size="icon" onClick={handleCopy} aria-label="Copy link">
+                                <Copy className="h-5 w-5" />
+                            </Button>
+                            {isCopied && <span className="text-sm text-muted-foreground self-center">Copied!</span>}
                         </CardContent>
                     </Card>
                 </div>
