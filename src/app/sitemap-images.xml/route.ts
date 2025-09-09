@@ -1,6 +1,8 @@
 
 import { apps } from '@/lib/apps';
 
+export const revalidate = 86400; // 24 hours
+
 const siteUrl = 'https://www.appsg.site';
 
 function generateSitemap(apps: any[]) {
