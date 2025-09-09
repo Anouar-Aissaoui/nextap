@@ -46,7 +46,7 @@ module.exports = {
             case '/eu-amau':
                 sitemapObject.priority = 0.3;
                 sitemapObject.changefreq = 'yearly';
-                sitemapObject.lastmod = '2024-01-01'; // Static date for policy pages
+                sitemapObject.lastmod = '2025-01-01'; // Static date for policy pages
                 break;
             default:
                 sitemapObject.changefreq = 'monthly';
@@ -57,3 +57,5 @@ module.exports = {
     return sitemapObject;
   },
 };
+
+    
