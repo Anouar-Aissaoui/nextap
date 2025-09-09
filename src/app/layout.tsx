@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: `%s - AppsGU`,
   },
   description: 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.',
-  keywords: ['modded apps', 'tweaked apps', 'iOS sideload', 'Android mods', 'app installer', 'free apps', 'no jailbreak'],
+  keywords: ['modded apps', 'tweaked apps', 'iOS sideload', 'Android mods', 'app installer', 'free apps', 'no jailbreak', 'AltStore', 'Instagram++', 'Pokemon Go Spoofer'],
   openGraph: {
     title: 'iOS & Android Modded Apps – Free Downloads | AppsGU',
     description: 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: 'AppsGU',
     images: [
       {
-        url: 'https://www.appsg.site/og-image.png', // Must be an absolute URL
+        url: '/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: 'AppsGU - Free Modded Apps for iOS & Android',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   icons: {
-    apple: '/og-image.png',
+    apple: '/opengraph-image.png',
   }
 };
 
@@ -61,10 +61,6 @@ export default function RootLayout({
           <Footer />
         </div>
         <Toaster />
-        <script type="text/javascript">var lck = false;</script>
-        <script type="text/javascript" src="https://getafilenow.com/script_include.php?id=888063"></script>
-        <script type="text/javascript">if(!lck){'{'}top.location = 'https://getafilenow.com/help/ablk.php?lkt=1'; {'}'}</script>
-        <noscript><meta http-equiv="refresh" content="0;url=https://getafilenow.com/help/enable_javascript.php?lkt=1" /></noscript>
         <Analytics />
         <SpeedInsights />
       </body>
