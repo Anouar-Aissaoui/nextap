@@ -44,6 +44,13 @@ const nextConfig: NextConfig = {
       destination: 'https://www.appsg.site/:path*',
       permanent: true,
     });
+
+    // Specific SEO redirect
+    redirects.push({
+        source: '/app/efootball-2024-mod',
+        destination: '/app/efootball-2025-mod',
+        permanent: true,
+    });
     
     // Collapse trailing slashes -> non-slash canonical
     redirects.push({
