@@ -28,11 +28,9 @@ export default function NotFound() {
             have been moved, deleted, or you might have typed the URL
             incorrectly.
           </p>
-          <div className="mt-6">
-            <Button asChild>
-              <Link href="/">Go Back to Home</Link>
-            </Button>
-          </div>
+          <Button asChild className="mt-6">
+            <Link href="/">Go Back to Home</Link>
+          </Button>
         </CardContent>
       </Card>
     </div>
