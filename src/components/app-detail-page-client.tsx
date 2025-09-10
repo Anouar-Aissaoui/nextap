@@ -1,4 +1,3 @@
-
 'use client';
 
 import * as React from 'react';
@@ -18,6 +17,7 @@ import { Badge } from '@/components/ui/badge';
 import AppCard from './app-card';
 import type { FullAppInfo } from '@/app/page';
 import { format } from 'date-fns';
+import SafeMarkdown from './safe-markdown';
 
 // Extend the Window interface to include call_locker
 declare global {
@@ -25,17 +25,6 @@ declare global {
     call_locker?: () => void;
   }
 }
-
-const SafeMarkdown = ({ text }: { text: string }) => {
-  return (
-    <div className="prose prose-sm dark:prose-invert max-w-none text-muted-foreground space-y-4">
-      {text.split('\n').map((paragraph, index) => (
-        <p key={index}>{paragraph}</p>
-      ))}
-    </div>
-  );
-};
-
 
 type AppDetailPageClientProps = {
   app: App;
@@ -228,5 +217,3 @@ export default function AppDetailPageClient({ app, allApps }: AppDetailPageClien
     </div>
   );
 }
-
-    
