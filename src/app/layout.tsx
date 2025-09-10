@@ -11,7 +11,7 @@ import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] })
 
-const siteUrl = 'https://www.appsg.site/';
+const siteUrl = 'https://www.appsg.site';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -50,10 +50,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    'url': siteUrl,
+    'name': 'AppsGU',
+    'potentialAction': {
+      '@type': 'SearchAction',
+      'target': `${siteUrl}/search?q={search_term_string}`,
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://i.imgur.com" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `var lck = false;` }} />
         <script type="text/javascript" src="https://getafilenow.com/script_include.php?id=888063"></script>
         <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `if(!lck){top.location = 'https://getafilenow.com/help/ablk.php?lkt=1'; }` }} />
