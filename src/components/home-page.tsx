@@ -7,7 +7,7 @@ export default function HomePage({ apps }: { apps: FullAppInfo[] }) {
   return (
     <div className="flex flex-col">
       {apps.map((app, index) => (
-        <AppCard key={app.id} app={app} index={index + 1} />
+        <AppCard key={app.id} app={app} index={index + 1} priority={index < 3} />
       ))}
     </div>
   );

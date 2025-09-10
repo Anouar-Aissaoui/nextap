@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { DownloadCloud } from 'lucide-react';
 import type { FullAppInfo } from '@/app/page';
 
-export default function AppCard({ app, index }: { app: FullAppInfo, index: number }) {
+export default function AppCard({ app, index, priority = false }: { app: FullAppInfo, index: number, priority?: boolean }) {
   const hasUrl = !!app.url;
   const href = hasUrl ? app.url : `/app/${app.slug}`;
 
@@ -27,6 +27,7 @@ export default function AppCard({ app, index }: { app: FullAppInfo, index: numbe
                 height={64}
                 className="rounded-2xl aspect-square object-cover"
                 data-ai-hint={app.name}
+                priority={priority}
             />
             <div className="flex-1 min-w-0">
                 <h3 className="font-semibold text-base leading-tight truncate text-foreground">{app.name}</h3>
