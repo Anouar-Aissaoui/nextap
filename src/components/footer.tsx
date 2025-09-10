@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="bg-background border-t mt-auto py-6">
       <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-        <p className="mb-2">AppsGU - Best App Downloader</p>
+        <p className="mb-2"><Link href="/" className="hover:text-primary transition-colors">AppsGU</Link> - Best App Downloader</p>
         <div className="flex justify-center items-center space-x-4">
           <Link href="/privacy-policy" className="hover:text-primary transition-colors">
             Privacy Policy
