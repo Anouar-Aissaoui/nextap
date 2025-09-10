@@ -1,9 +1,10 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'EU AMAU Disclosures',
-  description: 'EU Average Monthly Active Users (AMAU) disclosure for AppsGU.',
+  title: 'EU AMAU Disclosures | AppsGU',
+  description: 'EU Average Monthly Active Users (AMAU) disclosure for AppsGU, in compliance with the Digital Services Act (DSA).',
 };
 
 export default function EuAmauPage() {

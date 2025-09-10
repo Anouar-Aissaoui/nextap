@@ -3,8 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service',
-  description: 'Terms of Service for AppsGU.',
+  title: 'Terms of Service | AppsGU',
+  description: 'Read the Terms of Service for AppsGU. By using our site, you agree to these terms.',
 };
 
 export default function TermsPage() {

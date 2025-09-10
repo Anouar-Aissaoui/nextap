@@ -1,9 +1,10 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Copyright Policy',
-  description: 'Copyright Policy for AppsGU.',
+  title: 'Copyright Policy | AppsGU',
+  description: 'Review the Copyright Policy for AppsGU, including how to submit a DMCA notice.',
 };
 
 export default function CopyrightPolicyPage() {

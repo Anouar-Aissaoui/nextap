@@ -6,8 +6,8 @@ import SearchPage from '@/components/search-page';
 const siteUrl = 'https://www.appsg.site';
 
 export const metadata: Metadata = {
-  title: 'Search Apps',
-  description: 'Search for your favorite modded and tweaked apps for iOS and Android.',
+  title: 'Search Apps | AppsGU',
+  description: 'Find your favorite modded and tweaked apps for iOS and Android. Use our powerful search to explore our extensive library.',
   alternates: {
     canonical: `${siteUrl}/search`,
   },
