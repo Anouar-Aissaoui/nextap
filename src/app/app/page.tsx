@@ -13,8 +13,8 @@ const siteUrl = 'https://www.appsg.site';
 const pageUrl = `${siteUrl}/app`;
 
 export const metadata: Metadata = {
-  title: 'AppsGU: Top Modded Apps for iOS & Android (Free Downloads)',
-  description: 'Discover and download the best modded and tweaked apps for iOS and Android. Safe, updated, and free from AppsGU, your #1 source for enhanced mobile apps.',
+  title: 'All Apps - Browse Modded iOS & Android App Downloads | AppsGU',
+  description: 'Explore the complete collection of modded and tweaked apps for iOS and Android. Find your next favorite app, from utilities to games, all available for free at AppsGU.',
   alternates: {
     canonical: pageUrl,
   },
@@ -71,14 +71,14 @@ export default async function Home() {
        <div className="container mx-auto px-4 py-8">
         <header className="text-center mb-8">
             <h1 className="text-4xl font-bold">
-                Apps
+                All Apps
             </h1>
             <h2 className="text-xl text-muted-foreground mt-2">Browse our curated list of the best modded apps for iOS & Android.</h2>
         </header>
         <main>
           <Card>
             <CardHeader>
-                <CardTitle>All Apps</CardTitle>
+                <CardTitle>App Directory</CardTitle>
             </CardHeader>
             <CardContent className="p-0">
                 <HomePage apps={categorizedApps} />

@@ -70,9 +70,9 @@ export default async function Home() {
       <div className="container mx-auto px-4 py-8">
         <header className="text-center mb-8">
             <h1 className="text-4xl font-bold">
-                AppsGU
+                Your Source for Modded iOS & Android Apps
             </h1>
-            <h2 className="text-xl text-muted-foreground mt-2">Your Source for Modded iOS & Android Apps</h2>
+            <h2 className="text-xl text-muted-foreground mt-2">AppsGU</h2>
             <p className="text-md text-muted-foreground mt-4 max-w-2xl mx-auto">
               Browse our curated list of the best modded apps for iOS & Android.
             </p>
@@ -80,7 +80,7 @@ export default async function Home() {
         <main>
           <Card>
             <CardHeader>
-              <CardTitle>All Apps</CardTitle>
+              <CardTitle>Featured Apps</CardTitle>
             </CardHeader>
             <CardContent className="p-0">
               <HomePage apps={categorizedApps} />

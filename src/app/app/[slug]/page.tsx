@@ -70,6 +70,10 @@ export async function generateMetadata({ params }: AppDetailPageProps): Promise<
       description: app.description,
       images: [`/app/${app.slug}/opengraph-image`],
     },
+    robots: {
+      index: app.longDescription.length > 100, // Noindex if description is too short
+      follow: true,
+    }
   };
 }
 

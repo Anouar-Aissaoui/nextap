@@ -26,7 +26,7 @@ export default function AppCard({ app, index, priority = false }: { app: FullApp
                 width={64}
                 height={64}
                 className="rounded-2xl aspect-square object-cover"
-                data-ai-hint={app.name}
+                data-ai-hint={app['data-ai-hint'] || app.name.toLowerCase().split(' ').slice(0,2).join(' ')}
                 priority={priority}
             />
             <div className="flex-1 min-w-0">

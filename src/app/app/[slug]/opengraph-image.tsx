@@ -28,7 +28,7 @@ export default async function OpengraphImage({ params }: OpengraphImageProps) {
           <p tw="text-2xl">AppsGU</p>
         </div>
       ),
-      { ...size }
+      { ...size, alt: 'App Not Found' }
     );
   }
 
@@ -58,6 +58,7 @@ export default async function OpengraphImage({ params }: OpengraphImageProps) {
     ),
     {
       ...size,
+      alt: `${app.name} - ${app.description}`,
     }
   );
 }
