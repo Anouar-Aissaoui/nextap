@@ -13,7 +13,7 @@ const siteUrl = 'https://www.appsg.site';
 
 export const metadata: Metadata = {
   title: 'AppsGU: Top Modded Apps for iOS & Android (Free Downloads)',
-  description: 'Discover and download the best modded and tweaked apps for iOS and Android. Safe, updated, and free from AppsGU, your #1 source for enhanced mobile apps.',
+  description: 'Discover and download the best modded apps for Android and iOS. Find tweaked apps, modded games, and emulators, all with no jailbreak required. Your #1 source for enhanced mobile apps.',
   alternates: {
     canonical: siteUrl,
   },
@@ -74,7 +74,7 @@ export default async function Home() {
             </h1>
             <h2 className="text-xl text-muted-foreground mt-2">AppsGU</h2>
             <p className="text-md text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Browse our curated list of the best modded apps for iOS & Android.
+              Welcome to the top destination for modded apps and games. Explore our extensive IPA library for iOS and find the best modded games for Android. We specialize in providing tweaked apps for iOS with no jailbreak required, making it easy to sideload apps and access emulators like PPSSPP. Start your modded apps download today.
             </p>
         </header>
         <main>
@@ -93,4 +93,5 @@ export default async function Home() {
 }
 
     
+
 

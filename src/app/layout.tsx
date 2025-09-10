@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: `%s - AppsGU`,
   },
   description: 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.',
-  keywords: ['modded apps', 'tweaked apps', 'iOS sideload', 'Android mods', 'app installer', 'free apps', 'no jailbreak', 'AltStore', 'Instagram++', 'Pokemon Go Spoofer'],
+  keywords: ['modded apps', 'tweaked apps', 'iOS sideload', 'Android mods', 'app installer', 'free apps', 'no jailbreak', 'AltStore', 'Instagram++', 'Pokemon Go Spoofer', 'modded apps download', 'modded games for Android', 'iOS tweaked apps', 'iOS modded apps no jailbreak', 'IPA library (iOS)', 'sideload iOS apps', 'AltStore apps', 'PPSSPP iOS download', 'emulator for iOS', 'best modded games Android'],
   openGraph: {
     title: 'AppsGU - iOS & Android Modded Apps',
     description: 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.',
