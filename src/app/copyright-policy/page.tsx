@@ -27,7 +27,7 @@ export default function CopyrightPolicyPage() {
             <li>A description of where the material that you claim is infringing is located on the site;</li>
             <li>Your address, telephone number, and email address;</li>
             <li>A statement by you that you have a good faith belief that the disputed use is not authorized by the copyright or intellectual property owner, its agent, or the law;</li>
-            <li>A statement by you, made under penalty of perjury, that the above information in your Notice is accurate and that you are the copyright or intellectual property owner or authorized to act on the copyright or intellectual property owner&apos;s behalf.</li>
+            <li>A statement by you, made under penalty of perjury, that the above information in your Notice is accurate and that you are the copyright or intellectual property owner or authorized to act on the copyright or intellectual property owner's behalf.</li>
           </ul>
           <p>
             Our Agent for Notice of claims of copyright or other intellectual property infringement can be reached as follows:
