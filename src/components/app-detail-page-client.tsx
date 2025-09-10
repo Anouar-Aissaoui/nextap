@@ -68,7 +68,7 @@ export default function AppDetailPageClient({ app, allApps }: AppDetailPageClien
   };
 
   return (
-    <div className="bg-accent/50 min-h-screen">
+    <div className="bg-background">
         <div className="container mx-auto py-8 md:py-16">
             <nav className="mb-6 text-sm text-muted-foreground">
               <ol className="list-none p-0 inline-flex items-center space-x-2">
@@ -84,21 +84,21 @@ export default function AppDetailPageClient({ app, allApps }: AppDetailPageClien
               </ol>
             </nav>
 
-            <Card className="overflow-hidden shadow-lg mb-8">
-                <CardHeader className="bg-card p-6 md:p-8">
+            <Card className="overflow-hidden shadow-lg mb-8 bg-card">
+                <CardHeader className="p-6 md:p-8">
                     <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
                         <Image
                             src={app.img}
                             alt={`${app.name} App Icon`}
                             width={150}
                             height={150}
-                            className="rounded-2xl border-4 border-white shadow-md aspect-square object-cover shrink-0"
+                            className="rounded-3xl border-4 border-background shadow-md aspect-square object-cover shrink-0"
                             data-ai-hint={app.name}
                             priority
                             fetchPriority="high"
                         />
                         <div className="flex flex-col h-full flex-grow">
-                            <h1 className="text-3xl lg:text-5xl font-bold font-headline mb-1">{app.name}</h1>
+                            <h1 className="text-3xl lg:text-5xl font-bold mb-1">{app.name}</h1>
                             <p className="text-lg text-muted-foreground mb-4">By {app.author}</p>
                             <p className="text-base max-w-prose text-foreground/80">{app.description}</p>
                             <div className="mt-auto pt-6">
