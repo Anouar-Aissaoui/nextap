@@ -17,6 +17,7 @@ import {
 import { Badge } from '@/components/ui/badge';
 import AppCard from './app-card';
 import type { FullAppInfo } from '@/app/app/page';
+import { format } from 'date-fns';
 
 // Extend the Window interface to include call_locker
 declare global {
@@ -66,6 +67,8 @@ export default function AppDetailPageClient({ app, allApps }: AppDetailPageClien
       setTimeout(() => setIsCopied(false), 2000); // Reset after 2 seconds
     });
   };
+
+  const lastUpdated = app.lastModified ? format(new Date(app.lastModified), 'MMMM d, yyyy') : 'N/A';
 
   return (
     <div className="bg-background">
@@ -165,6 +168,10 @@ export default function AppDetailPageClient({ app, allApps }: AppDetailPageClien
                             <div className="flex justify-between items-center">
                                 <span className="text-muted-foreground flex items-center gap-2">Size</span>
                                 <span className="font-medium">{app.size}</span>
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <span className="text-muted-foreground flex items-center gap-2"><History /> Last Updated</span>
+                                <span className="font-medium">{lastUpdated}</span>
                             </div>
                         </CardContent>
                     </Card>
