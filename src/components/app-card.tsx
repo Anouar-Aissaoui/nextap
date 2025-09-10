@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { DownloadCloud } from 'lucide-react';
-import type { FullAppInfo } from '@/app/app/page';
+import type { FullAppInfo } from '@/app/page';
 
 export default function AppCard({ app, index }: { app: FullAppInfo, index: number }) {
   const hasUrl = !!app.url;
@@ -41,3 +41,5 @@ export default function AppCard({ app, index }: { app: FullAppInfo, index: numbe
     </Link>
   );
 }
+
+    
