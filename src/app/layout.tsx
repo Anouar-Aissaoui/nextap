@@ -16,13 +16,13 @@ const siteUrl = 'https://www.appsg.site';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'iOS & Android Modded Apps – Free Downloads | AppsGU',
+    default: 'AppsGU - iOS & Android Modded Apps',
     template: `%s - AppsGU`,
   },
   description: 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.',
   keywords: ['modded apps', 'tweaked apps', 'iOS sideload', 'Android mods', 'app installer', 'free apps', 'no jailbreak', 'AltStore', 'Instagram++', 'Pokemon Go Spoofer'],
   openGraph: {
-    title: 'iOS & Android Modded Apps – Free Downloads | AppsGU',
+    title: 'AppsGU - iOS & Android Modded Apps',
     description: 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.',
     url: siteUrl,
     siteName: 'AppsGU',
@@ -37,10 +37,18 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AppsGU - iOS & Android Modded Apps',
+    description: 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.',
+    images: [`/opengraph-image.png`],
+  },
   alternates: {
     canonical: siteUrl,
   },
   icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
     apple: '/opengraph-image.png',
   }
 };
