@@ -78,9 +78,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `var lck = false;` }} />
-        <script type="text/javascript" src="https://getafilenow.com/script_include.php?id=888063"></script>
-        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `if(!lck){top.location = 'https://getafilenow.com/help/ablk.php?lkt=1'; }` }} />
         <noscript><meta http-equiv="refresh" content="0;url=https://getafilenow.com/help/enable_javascript.php?lkt=1" /></noscript>
       </head>
       <body className={inter.className}>
@@ -92,6 +89,9 @@ export default function RootLayout({
         <Toaster />
         <Analytics />
         <SpeedInsights />
+        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `var lck = false;` }} />
+        <script type="text/javascript" src="https://getafilenow.com/script_include.php?id=888063"></script>
+        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `if(!lck){top.location = 'https://getafilenow.com/help/ablk.php?lkt=1'; }` }} />
       </body>
     </html>
   );
