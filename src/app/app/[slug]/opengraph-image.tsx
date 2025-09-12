@@ -1,3 +1,4 @@
+
 import { ImageResponse } from 'next/og';
 import { apps } from '@/lib/apps';
 import SiteLogo from '@/components/site-logo';
@@ -43,7 +44,7 @@ export default async function OpengraphImage({ params }: OpengraphImageProps) {
                 <p tw="ml-4 text-3xl font-bold">AppsGU</p>
             </div>
         </div>
-        <div tw="flex flex-col items-center">
+        <div tw="flex flex-col items-center text-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
                 src={appIcon}
@@ -51,7 +52,15 @@ export default async function OpengraphImage({ params }: OpengraphImageProps) {
                 tw="w-48 h-48 rounded-3xl border-4 border-zinc-700"
             />
             <h1 tw="text-7xl font-extrabold mt-8 text-center" style={{ lineHeight: 1.1 }}>{app.name}</h1>
-            <p tw="text-3xl text-zinc-400 mt-4 text-center">{app.description}</p>
+            <p tw="text-3xl text-zinc-400 mt-4 text-center max-w-4xl">{app.description}</p>
+            <div tw="flex mt-6 gap-4">
+              <div tw="flex items-center justify-center rounded-full bg-zinc-800 text-zinc-300 px-6 py-2 text-2xl">
+                {app.category}
+              </div>
+              <div tw="flex items-center justify-center rounded-full bg-zinc-800 text-zinc-300 px-6 py-2 text-2xl">
+                v{app.version}
+              </div>
+            </div>
         </div>
         <div tw="flex w-full h-10" />
       </div>
