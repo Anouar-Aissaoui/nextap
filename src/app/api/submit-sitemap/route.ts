@@ -50,12 +50,15 @@ export async function POST(req: NextRequest) {
       console.log('Sitemap submitted successfully.');
       return NextResponse.json({ message: 'Sitemap submitted successfully.' }, { status: 200 });
     } else {
-      console.error('Error submitting sitemap:', res.statusText, res.data);
-      return NextResponse.json({ error: 'Failed to submit sitemap', details: res.data }, { status: res.status });
+      // Log the full response for better debugging
+      console.error('Error submitting sitemap:', { status: res.status, statusText: res.statusText, data: res.data });
+      const errorDetails = res.data?.error?.message || 'No additional details provided by API.';
+      return NextResponse.json({ error: 'Failed to submit sitemap', details: errorDetails }, { status: res.status });
     }
   } catch (error: any) {
-    console.error('An error occurred during sitemap submission:', error.message);
-    const errorMessage = error.response?.data?.error?.message || error.message;
+    console.error('An unexpected error occurred during sitemap submission:', error);
+    // Standardize the error message format
+    const errorMessage = error.response?.data?.error?.message || error.message || 'An unknown error occurred.';
     return NextResponse.json({ error: 'An internal error occurred', details: errorMessage }, { status: 500 });
   }
 }
