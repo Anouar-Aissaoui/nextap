@@ -16,8 +16,8 @@ export type FullAppInfo = App & { category: string };
 const siteUrl = 'https://www.appsg.site';
 
 export const metadata: Metadata = {
-  title: 'AppsGU: Top Modded Apps for iOS & Android (Free Downloads)',
-  description: 'Discover and download the best modded apps for Android and iOS. Find tweaked apps, modded games, and emulators, all with no jailbreak required. Your #1 source for enhanced mobile apps.',
+  title: 'AppsGU — #1 Free Mods Store for iOS & Android (No Jailbreak)',
+  description: "Download 500+ modded apps & games for iPhone and Android — no jailbreak, no root. Safe, fast, updated daily. COD Mobile, Instagram++, PPSSPP, Roblox Mod & more.",
   alternates: {
     canonical: siteUrl,
   },

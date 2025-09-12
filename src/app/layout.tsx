@@ -16,14 +16,14 @@ const siteUrl = 'https://www.appsg.site';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'AppsGU - iOS & Android Modded Apps',
+    default: 'AppsGU — #1 Free Mods Store for iOS & Android (No Jailbreak)',
     template: `%s - AppsGU`,
   },
-  description: 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.',
-  keywords: ['modded apps', 'tweaked apps', 'iOS sideload', 'Android mods', 'app installer', 'free apps', 'no jailbreak', 'AltStore', 'Instagram++', 'Pokemon Go Spoofer', 'modded apps download', 'modded games for Android', 'iOS tweaked apps', 'iOS modded apps no jailbreak', 'IPA library (iOS)', 'sideload iOS apps', 'AltStore apps', 'PPSSPP iOS download', 'emulator for iOS', 'best modded games Android'],
+  description: 'Download 500+ modded apps & games for iPhone and Android — no jailbreak, no root. Safe, fast, updated daily. COD Mobile, Instagram++, PPSSPP, Roblox Mod & more.',
+  keywords: ['modded-apps', 'ios-mods', 'android-apk', 'no-jailbreak', 'free-mods', 'game-hacks', 'sideload-ios', 'ppsspp-emulator', 'trending-mods-2025', 'modded apps', 'tweaked apps', 'iOS sideload', 'Android mods', 'app installer', 'free apps', 'no jailbreak', 'AltStore', 'Instagram++', 'Pokemon Go Spoofer', 'modded apps download', 'modded games for Android', 'iOS tweaked apps', 'iOS modded apps no jailbreak', 'IPA library (iOS)', 'sideload iOS apps', 'AltStore apps', 'PPSSPP iOS download', 'emulator for iOS', 'best modded games Android'],
   openGraph: {
-    title: 'AppsGU - iOS & Android Modded Apps',
-    description: 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.',
+    title: 'AppsGU: Free Modded Apps & Games for iOS/Android',
+    description: 'The largest collection of working, safe mods — no jailbreak or root needed. Trusted by 2M+ users worldwide.',
     url: siteUrl,
     siteName: 'AppsGU',
     images: [
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AppsGU - iOS & Android Modded Apps',
-    description: 'Download free modded apps and tweaks for iPhone, iPad and Android. Safe guides, FAQs and regular updates.',
+    title: 'AppsGU: Free Modded Apps & Games for iOS/Android',
+    description: 'The largest collection of working, safe mods — no jailbreak or root needed. Trusted by 2M+ users worldwide.',
     images: [`/opengraph-image.png`],
   },
   alternates: {
