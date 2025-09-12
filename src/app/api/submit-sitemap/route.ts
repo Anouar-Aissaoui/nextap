@@ -12,13 +12,16 @@ export async function POST(req: NextRequest) {
     const siteUrlApp = process.env.SITE_URL;
     
     if (!privateKey || !clientEmail) {
-      throw new Error('Google credentials are not set in environment variables.');
+      console.warn('Google credentials (GOOGLE_PRIVATE_KEY, GOOGLE_CLIENT_EMAIL) are not set. Skipping sitemap submission.');
+      return NextResponse.json({ message: 'Google credentials not set. Skipping submission.' }, { status: 200 });
     }
     if (!siteUrlGsc) {
-      throw new Error('Google Search Console site URL (GSC_SITE_URL) is not set.');
+      console.warn('Google Search Console site URL (GSC_SITE_URL) is not set. Skipping sitemap submission.');
+      return NextResponse.json({ message: 'GSC_SITE_URL not set. Skipping submission.' }, { status: 200 });
     }
     if (!siteUrlApp) {
-        throw new Error('Application site URL (SITE_URL) is not set.');
+        console.warn('Application site URL (SITE_URL) is not set. Skipping sitemap submission.');
+        return NextResponse.json({ message: 'SITE_URL not set. Skipping submission.' }, { status: 200 });
     }
 
     const auth = new google.auth.GoogleAuth({
@@ -51,7 +54,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Failed to submit sitemap', details: res.data }, { status: res.status });
     }
   } catch (error: any) {
-    console.error('An error occurred:', error.message);
+    console.error('An error occurred during sitemap submission:', error.message);
     const errorMessage = error.response?.data?.error?.message || error.message;
     return NextResponse.json({ error: 'An internal error occurred', details: errorMessage }, { status: 500 });
   }
