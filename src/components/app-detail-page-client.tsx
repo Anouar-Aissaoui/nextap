@@ -8,6 +8,14 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft, Download, Info, Tag, History, FileQuestion, ChevronRight, Sparkles, Loader2, Twitter, Facebook, Linkedin, Copy, Share2 } from 'lucide-react';
 import { Card, CardHeader, CardContent, CardTitle } from '@/components/ui/card';
 import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogFooter,
+} from "@/components/ui/dialog";
+import { Progress } from "@/components/ui/progress";
+import {
   Accordion,
   AccordionContent,
   AccordionItem,
@@ -32,17 +40,52 @@ type AppDetailPageClientProps = {
 };
 
 export default function AppDetailPageClient({ app, allApps }: AppDetailPageClientProps) {
-  const [isPending, startTransition] = React.useTransition();
-  const [isCopied, setIsCopied] = React.useState(false);
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+  const [progress, setProgress] = React.useState(0);
+  const [statusText, setStatusText] = React.useState("Connecting to server...");
+
+  React.useEffect(() => {
+    let timer: NodeJS.Timeout;
+    if (isModalOpen) {
+      setProgress(0);
+      setStatusText("Connecting to server...");
+
+      // Simulate connection
+      timer = setTimeout(() => {
+        setProgress(30);
+        setStatusText("Preparing installation...");
+      }, 1000);
+
+      // Simulate installation
+      timer = setTimeout(() => {
+        setProgress(70);
+        setStatusText("Downloading app...");
+      }, 2500);
+      
+      // Complete installation
+      timer = setTimeout(() => {
+        setProgress(100);
+        setStatusText("Complete. Please wait...");
+      }, 4000);
+
+      // Trigger download and close
+      timer = setTimeout(() => {
+        if (typeof window.call_locker === 'function') {
+          window.call_locker();
+        }
+        setIsModalOpen(false);
+      }, 5000);
+    }
+    return () => clearTimeout(timer);
+  }, [isModalOpen]);
+
 
   const handleDownloadClick = () => {
-    startTransition(() => {
-      if (typeof window.call_locker === 'function') {
-        window.call_locker();
-      }
-    });
+    setIsModalOpen(true);
   };
   
+  const [isCopied, setIsCopied] = React.useState(false);
+
   const relatedApps = allApps
     .filter(relatedApp => relatedApp.category === app.category && relatedApp.id !== app.id)
     .slice(0, 5);
@@ -61,6 +104,29 @@ export default function AppDetailPageClient({ app, allApps }: AppDetailPageClien
 
   return (
     <div className="bg-background">
+        <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+          <DialogContent className="sm:max-w-[425px]">
+            <DialogHeader>
+              <div className="flex flex-col items-center text-center gap-4">
+                <Image
+                  src={app.img}
+                  alt={`${app.name} App Icon`}
+                  width={80}
+                  height={80}
+                  className="rounded-2xl"
+                  data-ai-hint={app.name}
+                />
+                <DialogTitle className="text-2xl">Installing {app.name}</DialogTitle>
+                <p className="text-sm text-muted-foreground">{statusText}</p>
+                <Progress value={progress} className="w-full" />
+              </div>
+            </DialogHeader>
+            <DialogFooter>
+                <p className="text-xs text-center text-muted-foreground w-full">Please wait while we prepare your download. This window will close automatically.</p>
+            </DialogFooter>
+          </DialogContent>
+        </Dialog>
+
         <div className="container mx-auto py-8 md:py-16">
             <nav className="mb-6 text-sm text-muted-foreground">
               <ol className="list-none p-0 inline-flex items-center space-x-2">
@@ -79,28 +145,26 @@ export default function AppDetailPageClient({ app, allApps }: AppDetailPageClien
             <Card className="overflow-hidden shadow-lg mb-8 bg-card">
                 <CardHeader className="p-6 md:p-8">
                     <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
-                        <Image
-                            src={app.img}
-                            alt={`${app.name} App Icon`}
-                            width={150}
-                            height={150}
-                            className="rounded-3xl border-4 border-background shadow-md aspect-square object-cover shrink-0"
-                            data-ai-hint={app.name}
-                            priority
-                            fetchPriority="high"
-                        />
+                        <div className="relative w-[100px] h-[100px] md:w-[150px] md:h-[150px] shrink-0">
+                          <Image
+                              src={app.img}
+                              alt={`${app.name} App Icon`}
+                              fill
+                              sizes="(max-width: 768px) 100px, 150px"
+                              className="rounded-3xl border-4 border-background shadow-md object-cover"
+                              data-ai-hint={app.name}
+                              priority
+                              fetchPriority="high"
+                          />
+                        </div>
                         <div className="flex flex-col h-full flex-grow">
                             <h1 className="text-3xl lg:text-5xl font-bold mb-1">{app.name}</h1>
                             <p className="text-lg text-muted-foreground mb-4">By {app.author}</p>
                             <p className="text-base max-w-prose text-foreground/80">{app.description}</p>
                             <div className="mt-auto pt-6">
-                                <Button size="lg" className="w-full sm:w-auto" onClick={handleDownloadClick} disabled={isPending}>
-                                    {isPending ? (
-                                      <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                                    ) : (
-                                      <Download className="mr-2 h-5 w-5" />
-                                    )}
-                                    {isPending ? 'Processing...' : 'Download Now'}
+                                <Button size="lg" className="w-full sm:w-auto" onClick={handleDownloadClick}>
+                                    <Download className="mr-2 h-5 w-5" />
+                                    Download Now
                                 </Button>
                             </div>
                         </div>
@@ -217,3 +281,5 @@ export default function AppDetailPageClient({ app, allApps }: AppDetailPageClien
     </div>
   );
 }
+
+    
