@@ -5,6 +5,9 @@ import HomePage from '@/components/home-page';
 import type { Metadata } from 'next';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Faq, type FaqItem } from '@/components/faq';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { Search } from 'lucide-react';
 
 export const revalidate = 3600; // Revalidate every hour
 
@@ -105,17 +108,30 @@ export default async function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="container mx-auto px-4 py-8">
-        <header className="text-center mb-8">
-            <h1 className="text-4xl font-bold">
-                #1 Free Mods Store for iOS & Android
-            </h1>
-            <h2 className="text-xl text-muted-foreground mt-2">AppsGU</h2>
-            <p className="text-md text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Welcome to the top destination for modded apps and games. Explore our extensive IPA library for iOS and find the best modded games for Android. We specialize in providing tweaked apps for iOS with no jailbreak required, making it easy to sideload apps and access emulators like PPSSPP. Start your modded apps download today.
-            </p>
+        <header className="text-center mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">#1 Free Mods Store for iOS & Android</h1>
+            <p className="text-lg md:text-xl text-muted-foreground mt-4 max-w-3xl mx-auto">Download 500+ modded apps & games — tweaked APKs for Android, sideloaded IPAs for iPhone. Bypass restrictions. Unlock premium features. 100% free.</p>
+            
+            <form action="/search" className="mt-8 max-w-xl mx-auto flex gap-2">
+              <Input
+                type="text"
+                name="q"
+                placeholder="Search for modded apps or games..."
+                autoComplete="off"
+                className="h-12 text-base flex-1"
+              />
+              <Button type="submit" size="lg" className="h-12">
+                <Search className="h-5 w-5" />
+                <span className="sr-only">Search</span>
+              </Button>
+            </form>
+            
+            <a href="#featured-apps" className="mt-8 inline-flex items-center gap-2 text-primary hover:underline">
+              👇 Browse Top Mods Now
+            </a>
         </header>
         <main className="space-y-12">
-          <Card>
+          <Card id="featured-apps">
             <CardHeader>
               <CardTitle>Featured Apps</CardTitle>
             </CardHeader>
