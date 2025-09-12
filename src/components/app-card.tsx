@@ -3,9 +3,8 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
 import { DownloadCloud } from 'lucide-react';
-import type { FullAppInfo } from '@/app/page';
+import type { FullAppInfo } from '@/app/app/page';
 
 export default function AppCard({ app, index, priority = false }: { app: FullAppInfo, index: number, priority?: boolean }) {
   const hasUrl = !!app.url;
@@ -18,11 +17,11 @@ export default function AppCard({ app, index, priority = false }: { app: FullApp
       rel={hasUrl ? 'noopener noreferrer' : ''}
       className="group block"
     >
-        <div className="flex items-center gap-4 px-4 h-20 border-b last:border-b-0">
+        <div className="flex items-center gap-4 px-4 h-24 border-b last:border-b-0">
             <div className="text-xl font-medium text-muted-foreground w-8 text-center">{index}</div>
             <Image
                 src={app.img}
-                alt={`${app.name} icon`}
+                alt={`${app.name} - ${app.description}`}
                 width={64}
                 height={64}
                 className="rounded-2xl aspect-square object-cover"
@@ -32,6 +31,7 @@ export default function AppCard({ app, index, priority = false }: { app: FullApp
             <div className="flex-1 min-w-0">
                 <h3 className="font-semibold text-base leading-tight truncate text-foreground">{app.name}</h3>
                 <p className="text-sm text-muted-foreground truncate">{app.category}</p>
+                <p className="text-xs text-muted-foreground/80 truncate">{app.description}</p>
             </div>
             <div className="ml-auto">
               <div className="h-10 w-10 inline-flex items-center justify-center text-primary">
@@ -42,5 +42,3 @@ export default function AppCard({ app, index, priority = false }: { app: FullApp
     </Link>
   );
 }
-
-    
