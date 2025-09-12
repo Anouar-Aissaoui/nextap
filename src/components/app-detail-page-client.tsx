@@ -39,6 +39,10 @@ type AppDetailPageClientProps = {
   allApps: App[];
 };
 
+// A lightweight, 1x1 grey SVG for a fast and effective blur placeholder.
+const shimmer =
+  'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHN0eWxlPSJmaWxsOiNjY2Q1ZWY7Ii8+PC9zdmc+';
+
 export default function AppDetailPageClient({ app, allApps }: AppDetailPageClientProps) {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   const [progress, setProgress] = React.useState(0);
@@ -154,6 +158,8 @@ export default function AppDetailPageClient({ app, allApps }: AppDetailPageClien
                               className="rounded-3xl border-4 border-background shadow-md object-cover"
                               data-ai-hint={app.name}
                               priority
+                              placeholder="blur"
+                              blurDataURL={shimmer}
                               fetchPriority="high"
                           />
                         </div>
