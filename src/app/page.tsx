@@ -26,23 +26,23 @@ export const metadata: Metadata = {
 const faqs: FaqItem[] = [
     {
       question: "What are modded apps?",
-      answer: "Modded apps are modified versions of official applications, offering enhanced features, unlocked premium content, or other improvements not found in the original. AppsGU provides a curated library of these tweaked apps for both iOS and Android."
+      answer: "Modded apps are modified versions of original apps or games — often with unlocked premium features, unlimited resources, ad removal, or cheats enabled. They’re not available on official app stores."
     },
     {
       question: "Is it safe to download from AppsGU?",
-      answer: "Yes, safety is our priority. We strive to provide clean and reliable modded apps. However, as with any third-party app source, you should always be cautious. We recommend using a secondary account where possible for online games."
+      answer: "Yes. Every file is manually reviewed and scanned for malware before publishing. We never bundle adware or trackers. Open community reports ensure fast removal of broken or unsafe files."
     },
     {
       question: "Do I need to jailbreak my iPhone or root my Android?",
-      answer: "No jailbreak or root is required for the vast majority of our apps. For iOS, we provide apps that can be installed via sideloading methods like AltStore. For Android, you simply need to enable installation from unknown sources."
+      answer: "No. For iOS, use AltStore or TrollStore to sideload apps without jailbreak. For Android, enable 'Unknown Sources' and install APKs directly — no root needed."
     },
     {
       question: "How do I install apps on iOS without jailbreaking?",
-      answer: "You can sideload IPA files using tools like AltStore. Sideloading uses your Apple ID to sign the app, allowing it to be installed on your device without modifying the iOS system. We provide guides for apps that require this method."
+      answer: "Use AltStore (free) or Sideloadly. Connect your iPhone to a computer once to set up, then install IPAs over Wi-Fi. Apps auto-refresh weekly to avoid expiration."
     },
     {
       question: "Are the apps on this site free?",
-      answer: "Yes, all the modded apps and tweaked apps available for download on AppsGU are free. Our goal is to provide access to enhanced app experiences without cost."
+      answer: "100% free. No subscriptions. No paywalls. No hidden fees. We’re supported by optional donations and community love ❤️"
     }
 ];
 
