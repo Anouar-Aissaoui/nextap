@@ -6,6 +6,10 @@ import Image from 'next/image';
 import { DownloadCloud } from 'lucide-react';
 import type { FullAppInfo } from '@/app/app/page';
 
+// A lightweight, 1x1 grey SVG for a fast and effective blur placeholder.
+const shimmer =
+  'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHN0eWxlPSJmaWxsOiNjY2Q1ZWY7Ii8+PC9zdmc+';
+
 export default function AppCard({ app, index, priority = false }: { app: FullAppInfo, index: number, priority?: boolean }) {
   const hasUrl = !!app.url;
   const href = hasUrl ? app.url : `/app/${app.slug}`;
@@ -27,6 +31,8 @@ export default function AppCard({ app, index, priority = false }: { app: FullApp
                 className="rounded-2xl aspect-square object-cover"
                 data-ai-hint={app['data-ai-hint'] || app.name.toLowerCase().split(' ').slice(0,2).join(' ')}
                 priority={priority}
+                placeholder="blur"
+                blurDataURL={shimmer}
             />
             <div className="flex-1 min-w-0">
                 <h3 className="font-semibold text-base leading-tight truncate text-foreground">{app.name}</h3>
