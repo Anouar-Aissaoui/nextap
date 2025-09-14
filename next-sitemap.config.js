@@ -3,14 +3,7 @@ const { apps } = require('./src/lib/apps.ts');
 
 module.exports = {
   siteUrl: 'https://www.appsg.site',
-  generateRobotsTxt: true,
-  robotsTxtOptions: {
-    policies: [{ userAgent: '*', allow: '/' }],
-    additionalSitemaps: [
-      'https://www.appsg.site/sitemap.xml',
-      'https://www.appsg.site/sitemap-images.xml',
-    ],
-  },
+  generateRobotsTxt: false, // Switched to false to use Next.js's robots.ts
   transform: async (config, path) => {
     // Default object for static pages
     let sitemapObject = {

@@ -8,9 +8,9 @@ export default function robots(): MetadataRoute.Robots {
         {
             userAgent: '*',
             allow: '/',
-            disallow: ['/_next/data/', '/*?q=*'],
+            disallow: ['/*?q=*'],
         }
     ],
-    sitemap: `${siteUrl}/sitemap.xml`,
+    sitemap: [`${siteUrl}/sitemap.xml`, `${siteUrl}/sitemap-images.xml`],
   };
 }
